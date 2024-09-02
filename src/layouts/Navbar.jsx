@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import artukbey_logo from "../assets/images/artukbey-logo.jpg";
 import MobileMenu from "./MobileMenu";
 
-const Navbar = () => {
+const Navbar = ({menuOpen, setMenuOpen}) => {
   const [color, setColor] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
+  
 
   const changeHeaderColor = () => {
     window.scrollY >= 20 ? setColor(true) : setColor(false);
@@ -12,7 +12,7 @@ const Navbar = () => {
   window.addEventListener("scroll", changeHeaderColor);
 
   return (
-    <div className={`kf-navbar text-white bg-black flex justify-between lg:flex-col`}>
+    <div   className={`kf-navbar text-white bg-black flex justify-between lg:flex-col`}>
       {/* Top Bar */}
       <div
         className={`${
@@ -51,7 +51,7 @@ const Navbar = () => {
       {color ? <div className="h-20 bg-black/90  "></div> : null}
 
       {/* Main Navbar */}
-      <div
+      <div 
         className={`flex justify-between items-center py-4 h-20 bg-black w-full px-6 lg:px-10 ${
           color && "fixed top-0 py-4 ease-in transition-all z-30 bg-black"
         }`}
@@ -69,79 +69,72 @@ const Navbar = () => {
 
         {/* Navigation Menu - Hidden on Mobile */}
         <ul className={`hidden lg:flex space-x-8 font-semibold`}>
-          <li>
+          <li onMouseMove={()=>{setMenuOpen(false)}}>
             <a href="/" className="hover:text-yellow-500">
               HOME
             </a>
           </li>
-          <li>
+
+          <li onMouseMove={()=>{setMenuOpen(false)}}>
             <a href="about" className="hover:text-yellow-500">
               ABOUT
             </a>
           </li>
-          <li className="group relative">
-            <a href="menu-coffee" className="hover:text-yellow-500">
+
+        {/* Menu  */}
+          <li onMouseMove={()=>{setMenuOpen(false)}} className="group relative">
+            <a href="/all-menu" className="hover:text-yellow-500">
               MENU
               <i className="las la-angle-down ml-1"></i>
             </a>
-            {/* Dropdown for Menu */}
-            <ul className="absolute z-50 hidden group-hover:block bg-black text-white p-4 space-y-2 mt-2">
-              <li>
-                <a href="menu-coffee" className="hover:text-yellow-500">
-                  Menu Coffee
-                </a>
-              </li>
-              <li>
-                <a href="menu-restaurant" className="hover:text-yellow-500">
-                  Menu Restaurant
-                </a>
-              </li>
-            </ul>
+          
           </li>
-          <li className="group relative">
-            <a href="#" className="hover:text-yellow-500">
+
+          {/* page */}
+          <li onMouseMove={()=>{setMenuOpen(true)}} className="">
+            <a href="#" className="hover:text-yellow-500 ">
               PAGES
               <i className="las la-angle-down ml-1"></i>
             </a>
             {/* Dropdown for Pages */}
-            <ul className="absolute z-50 hidden group-hover:block bg-black text-white p-4 space-y-2 mt-2">
-              <li>
-                <a href="services" className="hover:text-yellow-500">
+            <ul  className={`absolute z-50 font-normal bg-black text-white p-4 space-y-2 mt-8 w-40 duration-300 ease-in-out ${
+          menuOpen
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 -translate-y-5 pointer-events-none"
+        }`}>
+              <li onClick={()=> setMenuOpen(false)}>
+                <a href="/services" className="hover:text-yellow-500">
                   Services
                 </a>
               </li>
-              <li>
-                <a href="reservation" className="hover:text-yellow-500">
-                  Reservation
-                </a>
-              </li>
-              <li>
+
+              <li onClick={()=> setMenuOpen(false)}>
                 <a href="history" className="hover:text-yellow-500">
                   History
                 </a>
               </li>
-              <li>
-                <a href="team" className="hover:text-yellow-500">
-                  Our Chefs
-                </a>
-              </li>
-              <li>
+             
+              <li onClick={()=> setMenuOpen(false)}>
                 <a href="gallery" className="hover:text-yellow-500">
                   Gallery
                 </a>
               </li>
-              <li>
+
+              <li onClick={()=> setMenuOpen(false)}>
                 <a href="faq" className="hover:text-yellow-500">
                   FAQ
                 </a>
               </li>
-            </ul>
+            </ul> 
           </li>
-          <li>
+
+{/* contact */}
+          <li onMouseMove={()=>{setMenuOpen(false)}}>
             <a href="contacts" className="hover:text-yellow-500">
               CONTACTS
             </a>
           </li>
+
         </ul>
 
         {/* Book a Table Button */}

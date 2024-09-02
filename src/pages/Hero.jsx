@@ -10,10 +10,10 @@ import bg2 from "../assets/images/bg2.jpg";
 import bg3 from "../assets/images/bg3.jpg";
 import nav from "../assets/images/nav.png";
 import nav2 from "../assets/images/nav2.png";
-import MobileMenu from "../layouts/MobileMenu";
 
 
-const Hero = () => {
+
+const Hero = ({setMenuOpen}) => {
 
   const [color, setColor] = useState(false);
   const [p, setP] = useState('');
@@ -34,7 +34,7 @@ const Hero = () => {
   
 
   return (
-    <section className={`section kf-started-slider  bg-black/90 `}>
+    <section onMouseOut={()=> setMenuOpen(false)} className={`section kf-started-slider   `}>
      
      <Swiper
   className={` swiper-container transition-all h-[795px]  duration-200 ease-in-out ${color ? `${p}  transition-all duration-1000 ease-in-out`  : ' transition-all duration-1000 ease-in-out'}`}
