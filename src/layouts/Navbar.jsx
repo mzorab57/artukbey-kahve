@@ -83,7 +83,7 @@ const Navbar = ({menuOpen, setMenuOpen}) => {
 
         {/* Menu  */}
           <li onMouseMove={()=>{setMenuOpen(false)}} className="group relative">
-            <a href="/all-menu" className="hover:text-yellow-500">
+            <a href="/menu" className="hover:text-yellow-500">
               MENU
               <i className="las la-angle-down ml-1"></i>
             </a>

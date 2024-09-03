@@ -2,7 +2,7 @@ import React from "react";
 
 const Statistics = () => {
   return (
-    <section className="py-12 bg-black/90 text-white">
+    <section className="py-12 text-white">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap gap-10 lg:justify-around items-center ">
           {/* First Item */}

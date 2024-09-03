@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import CategoryButton from "./CategoryButton ";
 
-const CategoryFilter = ({categories}) => {
-  const [activeCategory, setActiveCategory] = useState("ALL");
+const CategoryFilter = ({categories, activeCategory, setActiveCategory}) => {
+ 
 
   return (
     <div className="flex justify-center w-full text-center space-x-4 my-20">
-      {categories.map((category) => (
+      {categories && categories.map((category) => (
         <CategoryButton
           key={category}
           label={category}

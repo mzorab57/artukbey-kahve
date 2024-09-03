@@ -13,7 +13,7 @@ const MenuItem = ({ imgSrc, altText, title, description, price }) => {
       </a>
     </div>
     <div>
-      <h5 className="text-xl font-bold text-white">{title}</h5>
+      <h5 className="text-xl font-semibold text-white">{title}</h5>
       <div className="text-gray-400 py-4">{description}</div>
       <div className="text-yellow-500 font-bold mt-2">{price}</div>
     </div>

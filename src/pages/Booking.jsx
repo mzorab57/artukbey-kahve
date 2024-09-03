@@ -1,5 +1,4 @@
 import React from 'react';
-import bookingImage from '../assets/images/booking.jpg';
 
 const Booking = () => {
   return (
