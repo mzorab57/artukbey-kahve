@@ -642,7 +642,16 @@ const Menu = () => {
           style={{ backgroundImage: `url(${menu_logo})` }}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-44 gap-y-20">
-            {filteredMenuItems.map((item, index) => (
+            {path === "/" ?filteredMenuItems.slice(0,6).map((item, index) => (
+              <MenuItem
+                key={index}
+                imgSrc={item.imgSrc}
+                altText={item.altText}
+                title={item.title}
+                description={item.description}
+                price={item.price}
+              />
+            )):filteredMenuItems.map((item, index) => (
               <MenuItem
                 key={index}
                 imgSrc={item.imgSrc}
