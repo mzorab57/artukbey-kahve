@@ -4,9 +4,11 @@ import "swiper/css";
 
 
 import bg from "../assets/images/testimonials_bg2.jpeg";
-import rev1 from "../assets/images/rev1.jpg";
-import rev2 from "../assets/images/rev2.jpg";
-import rev3 from "../assets/images/rev3.jpg";
+import p1 from "../assets/images/p1.jpg";
+import p2 from "../assets/images/p2.jpg";
+import p3 from "../assets/images/p3.jpg";
+import p4 from "../assets/images/p4.jpg";
+
 
 const FeedBack = () => {
   return (
@@ -17,7 +19,7 @@ const FeedBack = () => {
       <div className="container m-auto text-center  h-full px-5  ">
         {/* Titles */}
         <div className="mb-12">
-          <h3 className="text-2xl text-yellow-500 mb-4">Customer Feedback</h3>
+          <h3 className="text-2xl text-primary mb-4">Customer Feedback</h3>
           <h2 className="text-4xl font-bold text-white">
             What Our Clients Say
           </h2>
@@ -53,7 +55,7 @@ const FeedBack = () => {
           }}
           className="swiper-container max-w-[1200px]"
         >
-          {[ rev2, rev3, rev2, rev3,rev2, rev3, rev2, rev3].map((image, index) => (
+          {[ p1,p2,p3,p4,p1,p2,p3,p4].map((image, index) => (
             <SwiperSlide key={index} className="text-center ">
               <div className="relative p-8 bg-black  bg-opacity-80     text-white">
                 <img
@@ -65,23 +67,17 @@ const FeedBack = () => {
                   {[...Array(5)].map((_, i) => (
                     <i
                       key={i}
-                      className="fas fa-star text-yellow-500 mx-1"
+                      className="fas fa-star text-primary mx-1"
                     />
                   ))}
                 </div>
                 <p className="text-lg italic mb-4">
-                  Sed ut perspiciatis unde omnis natus error luptatem
-                  accusantium doloremque  quae
-                  abillo.
+                But from where all this arises, every born error of pleasure, accusing pain and suffering, which from him.
                 </p>
                 <h5 className="text-xl font-bold">
-                  {index === 0 && "Frederick S. France"}
-                  {index === 1 && "James M. London"}
-                  {index === 2 && "Olivia D. New York"}{" "}
-                  <em className="text-yellow-500">
-                    {index === 0 && "Web Designer"}
-                    {index === 1 && "Lawyer"}
-                    {index === 2 && "Dentist"}
+                 Harun Ahmed <br/>
+                  <em className="text-primary">
+                  Web Designer
                   </em>
                 </h5>
               </div>

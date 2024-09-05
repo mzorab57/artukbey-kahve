@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import carousel1 from "../assets/images/carousel1.jpg";
+
 import carousel2 from "../assets/images/carousel2.jpg";
 import carousel3 from "../assets/images/carousel3.jpg";
 import carousel4 from "../assets/images/carousel4.jpg";
@@ -62,9 +62,9 @@ const Carousel = () => {
                   />
 
                   {/* Text Overlay */}
-                  <div className="absolute p-7 inset-0  bg-black bg-opacity-50 group-hover:bg-opacity-40   opacity-100 transition-opacity duration-500">
+                  <div className="absolute p-7 inset-0  bg-black bg-opacity-0 group-hover:bg-opacity-40   opacity-100 transition-opacity duration-500">
                     <div className="border duration-1000 ease-out border-orange-100 border-opacity-0 group-hover:border-opacity-100  group-hover:border-orange-200 w-full h-full flex flex-col justify-center items-center rounded ">
-                      <h5 className="text-white text-opacity-0 group-hover:text-opacity-100 text-xl">Restaurant Menu</h5>
+                    
                     </div>
                   </div>
                 </div>

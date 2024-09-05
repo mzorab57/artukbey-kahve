@@ -1,16 +1,11 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
 import Menu from "./Menu";
 
-import servicesSectionImage from "../assets/images/services-section.jpg";
 import menuBg from "../assets/images/menu-Bg.jpg";
 
-const AllMenu = () => {
+const AllMenu = ({setMenuOpen}) => {
   const [color, setColor] = useState(false);
   const [p, setP] = useState("");
-
-  const location = useLocation();
-  const path = location.pathname;
 
   const changeHeaderColor = () => {
     if (window.scrollY >= 5) {
@@ -25,6 +20,7 @@ const AllMenu = () => {
 
   return (
     <section
+    onMouseOut={()=> setMenuOpen(false)}
       className={`text-white  ${
         color
           ? `${p}  transition-all duration-1000 ease-in-out`

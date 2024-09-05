@@ -5,7 +5,7 @@ import Services from "../pages/Services";
 import { useLocation } from "react-router-dom";
 
 
-const ServicesSection = () => {
+const ServicesSection = ({setMenuOpen}) => {
 
   const [color, setColor] = useState(false);
   const [p, setP] = useState('');

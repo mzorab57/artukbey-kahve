@@ -34,8 +34,8 @@ const AppRoutes = ({ setMenuOpen }) => {
             </>
           }
         />
-        <Route path="/services" element={<ServicesSection />} />
-        <Route path="/menu" element={<AllMenu />} />
+        <Route path="/services" element={<ServicesSection setMenuOpen={setMenuOpen} />} />
+        <Route path="/menu" element={<AllMenu setMenuOpen={setMenuOpen} />} />
         <Route path="/menu/:category" element={<AllMenu />} />
       </Routes>
     </>

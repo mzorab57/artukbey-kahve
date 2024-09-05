@@ -11,10 +11,8 @@ import coldDrinkAllMenu from "../assets/images/coldDrinkAllMenu.jpg";
 import tralichaAllMenu from "../assets/images/tralichaAllMenu.jpg";
 import bademAllMenu from "../assets/images/bademAllMenu.jpg";
 import chocolate from "../assets/images/chooclate.jpg";
-import fruitAllMenu from "../assets/images/fruitAllMenu.jpg";
 import artukbey_turk_kahvesi_100gr from "../assets/images/artukbey-turk-kahvesi-100gr.jpg";
 import special_kahve_100gr from "../assets/images/special-kahve-100gr.jpeg";
-import menengic_kahve_100gr from "../assets/images/menengic-kahve-100gr.jpeg";
 import artukbey_damla_sakizli_turk_kahvesi_100gr from "../assets/images/artukbey_damla_sakizli_turk_kahvesi_100gr.jpg";
 import menengic_coffee_dibek_100gr from "../assets/images/menengic_coffee_dibek_100gr.webp";
 import dibek_coffee_artukbey_turkish_coffee_400g from "../assets/images/dibek_coffee_artukbey_turkish_coffee_400g.webp";
@@ -38,7 +36,6 @@ import Special_Dibek_Coffee_Kese_100gr from "../assets/images/Special_Dibek_Coff
 import Artukbey_Kakuleli_Dibek_Coffee_Kese from "../assets/images/Artukbey_Kakuleli_Dibek_Coffee_Kese.jpg";
 import Artukbey_Menengic_Coffee_kese_200gr from "../assets/images/Artukbey_Menengic_Coffee_kese_200gr.jpg";
 import Artukbey_Suryani_Dibek_Coffee_Kese_200gr from "../assets/images/Artukbey_Suryani_Dibek_Coffee_Kese_200gr.jpg";
-import Artukbey_7_Si_Bir_Arada_Dibek_Coffee_100gr from "../assets/images/Artukbey_7_Si_Bir_Arada_Dibek_Coffee_100gr.jpg";
 import Artukbey_Damla_Sakizli_Dibek_Coffee_100gr from "../assets/images/Artukbey_Damla_Sakizli_Dibek_Coffee_100gr.jpg";
 import Artukbey_Kayisili_Dibek_Coffee_Kese_200gr from "../assets/images/Artukbey_Kayisili_Dibek_Coffee_Kese_200gr.jpg";
 import Special_Damla_Sakizli_Dibek_Kese_100gr from "../assets/images/Special_Damla_Sakizli_Dibek_Kese_100gr.jpg";
@@ -67,6 +64,52 @@ import Sade_Turkish_Coffee_Hazir_Set from "../assets/images/Sade_Turkish_Coffee_
 import Special_Menengic_Coffee_Hazir_Set from "../assets/images/Special_Menengic_Coffee_Hazir_Set.jpg";
 import Special_Damla_Sakizli_Dibek_Coffee from "../assets/images/Special_Damla_Sakizli_Dibek_Coffee.jpg";
 
+// COLD DRINK ICE CREAM
+import ice1 from "../assets/images/ice1.jpg";
+import ice2 from "../assets/images/ice2.jpg";
+import ice3 from "../assets/images/ice3.jpg";
+
+// FRUIT
+import fruit1 from "../assets/images/fruit1.jpg";
+import fruit from "../assets/images/fruit.jpg";
+import fwshk from "../assets/images/fwshk.jpg";
+
+// FRUIT JUICE
+import fjpl from "../assets/images/fjpl.jpg";
+import fjbm from "../assets/images/fjbm.jpg";
+import fjo from "../assets/images/fjo.jpg";
+import fjk from "../assets/images/fjk.jpg";
+import fjkiwi from "../assets/images/fjkiwi.jpg";
+import fjp from "../assets/images/fjp.jpg";
+import fjapp from "../assets/images/fjapp.jpg";
+import fjg from "../assets/images/fjg.jpg";
+import fjs from "../assets/images/fjs.jpg";
+import fjh from "../assets/images/fjh.jpg";
+
+// MOCKTAIL
+import mocktail1 from "../assets/images/mocktail1.jpg";
+import mocktail2 from "../assets/images/mocktail2.jpg";
+import mocktail3 from "../assets/images/mocktail3.jpg";
+import mocktail4 from "../assets/images/mocktail4.jpg";
+import mocktail5 from "../assets/images/mocktail5.jpg";
+import mocktail6 from "../assets/images/mocktail6.jpg";
+import mocktail7 from "../assets/images/mocktail7.jpg";
+import mocktail8 from "../assets/images/mocktail8.jpg";
+import mocktail9 from "../assets/images/mocktail9.jpg";
+import mocktail10 from "../assets/images/mocktail10.jpg";
+// smoothie
+import smoothi1 from "../assets/images/smoothi1.jpg";
+import smoothi2 from "../assets/images/smoothi2.jpg";
+import smoothi3 from "../assets/images/smoothi3.jpg";
+import smoothi4 from "../assets/images/smoothi4.jpg";
+import smoothi5 from "../assets/images/smoothi5.jpg";
+import smoothi6 from "../assets/images/smoothi6.jpg";
+// cake
+import cake1 from "../assets/images/cake1.jpg";
+import cake2 from "../assets/images/cake2.jpg";
+import cake3 from "../assets/images/cake3.jpg";
+
+
 
 const Menu = () => {
   const [activeCategory, setActiveCategory] = useState("ALL");
@@ -75,6 +118,369 @@ const Menu = () => {
   const path = location.pathname;
 
   const allMenuItems = [
+    {
+      imgSrc: hotDrink,
+      altText: "Turkish Coffee",
+      title: "Turkish Coffee",
+      description: "2/3 espresso, 1/3 steamed milk",
+      price: "........... 2,000 IQD",
+      category: "HOT DRINK",
+      type: "PAWDER COFFEE"
+    },
+    {
+      imgSrc: fruit1,
+      altText: "Fruit1",
+      title: "A Small Bowl of Fruit",
+      description: "Natural Sugar",
+      price: "........... 5,000 IQD",
+      category: "FRUIT",
+      type: "FRUIT"
+    },
+   
+    {
+      imgSrc: cake2,
+      altText: "cake2",
+      title: "CAKE",
+      description:"Peanuts Cake",
+      price: "........... 6,000 IQD",
+      category: "CAKE",
+    },
+    {
+      imgSrc: coldDrinkAllMenu,
+      altText: "Milk Coffee",
+      title: "Milk Shake Lotos",
+      description: "1/3 Chocolate, 2/3 steamed milk",
+      price: "........... 6,000 IQD",
+      category: "COLD DRINK",
+      type: "COLD DRINK"
+    },
+    {
+      imgSrc: ice1,
+      altText: "ice1 cold drink",
+      title: "Ice Cream",
+      description: "1/3 Fruit, 2/3 milk",
+      price: "........... 1,000 IQD",
+      category: "COLD DRINK",
+      type: "ICE CREAM"
+    },
+    {
+      imgSrc: cake1,
+      altText: "cake1",
+      title: "CAKE",
+      description: "Chocolate Cake",
+      price: "........... 5,000 IQD",
+      category: "CAKE",
+    },
+    {
+      imgSrc: smoothi6,
+      altText: "smoothi6",
+      title: "SMOOTHIE",
+      description: "Kiwi Smoothie",
+      price: "........... 5,000 IQD",
+      category: "COLD DRINK",
+      type: "SMOOTHIE"
+    },
+    
+    {
+      imgSrc: mocktail2,
+      altText: "mocktail2",
+      title: "MOCKTAIL",
+      description: "Water Melon Mokctail",
+      price: "........... 5,000 IQD",
+      category: "COLD DRINK",
+      type: "MOCKTAIL"
+    },
+    {
+      imgSrc: smoothi5,
+      altText: "smoothi5",
+      title: "SMOOTHIE",
+      description: "Bnana Smoothie",
+      price: "........... 5,000 IQD",
+      category: "COLD DRINK",
+      type: "SMOOTHIE"
+    },
+    {
+      imgSrc: smoothi4,
+      altText: "smoothi4",
+      title: "SMOOTHIE",
+      description: "Strawberry Smoothie",
+      price: "........... 5,000 IQD",
+      category: "COLD DRINK",
+      type: "SMOOTHIE"
+    },
+    {
+      imgSrc: smoothi3,
+      altText: "smoothi3",
+      title: "SMOOTHIE",
+      description: "Melon Smoothie",
+      price: "........... 5,000 IQD",
+      category: "COLD DRINK",
+      type: "SMOOTHIE"
+    },
+    {
+      imgSrc: smoothi2,
+      altText: "smoothi2",
+      title: "SMOOTHIE",
+      description: "Apple Smoothie",
+      price: "........... 5,000 IQD",
+      category: "COLD DRINK",
+      type: "SMOOTHIE"
+    },
+    {
+      imgSrc: smoothi1,
+      altText: "smoothi1",
+      title: "SMOOTHIE",
+      description: "Water Melon and Mint Smoothie",
+      price: "........... 5,000 IQD",
+      category: "COLD DRINK",
+      type: "SMOOTHIE"
+    },
+    {
+      imgSrc: mocktail10,
+      altText: "mocktail10",
+      title: "MOCKTAIL",
+      description: "Red Bull Mokctail",
+      price: "........... 5,000 IQD",
+      category: "COLD DRINK",
+      type: "MOCKTAIL"
+    },
+    {
+      imgSrc: mocktail9,
+      altText: "mocktail9",
+      title: "MOCKTAIL",
+      description: "Apple Mokctail",
+      price: "........... 5,000 IQD",
+      category: "COLD DRINK",
+      type: "MOCKTAIL"
+    },
+    {
+      imgSrc: mocktail8,
+      altText: "mocktail8",
+      title: "MOCKTAIL",
+      description: "Haway Blue Mokctail",
+      price: "........... 5,000 IQD",
+      category: "COLD DRINK",
+      type: "MOCKTAIL"
+    },
+    {
+      imgSrc: mocktail7,
+      altText: "mocktail7",
+      title: "MOCKTAIL",
+      description: "Special Mokctail",
+      price: "........... 5,000 IQD",
+      category: "COLD DRINK",
+      type: "MOCKTAIL"
+    },
+    {
+      imgSrc: mocktail6,
+      altText: "mocktail6",
+      title: "MOCKTAIL",
+      description: "Mohito Mokctail",
+      price: "........... 5,000 IQD",
+      category: "COLD DRINK",
+      type: "MOCKTAIL"
+    },
+    {
+      imgSrc: mocktail5,
+      altText: "mocktail5",
+      title: "MOCKTAIL",
+      description: "Strawberry and Mint Mokctail",
+      price: "........... 5,000 IQD",
+      category: "COLD DRINK",
+      type: "MOCKTAIL"
+    },
+    {
+      imgSrc: mocktail4,
+      altText: "mocktail4",
+      title: "MOCKTAIL",
+      description: "Raspery Mokctail",
+      price: "........... 5,000 IQD",
+      category: "COLD DRINK",
+      type: "MOCKTAIL"
+    },
+    {
+      imgSrc: mocktail3,
+      altText: "mocktail3",
+      title: "MOCKTAIL",
+      description: "Pashn Fruit Mokctail",
+      price: "........... 5,000 IQD",
+      category: "COLD DRINK",
+      type: "MOCKTAIL"
+    },
+    
+    {
+      imgSrc: mocktail1,
+      altText: "mocktail1",
+      title: "MOCKTAIL",
+      description: "BLUEBERY Mokctail",
+      price: "........... 5,000 IQD",
+      category: "COLD DRINK",
+      type: "MOCKTAIL"
+    },
+    {
+      imgSrc: fjh,
+      altText: "fjh",
+      title: "Fruit Juice",
+      description: "Fruit Juice Pomegranate",
+      price: "........... 5,000 IQD",
+      category: "COLD DRINK",
+      type: "FRUIT JUICE"
+    },
+    {
+      imgSrc: fjs,
+      altText: "fjs",
+      title: "Fruit Juice",
+      description: "Fruit Juice Strawberry",
+      price: "........... 5,000 IQD",
+      category: "COLD DRINK",
+      type: "FRUIT JUICE"
+    },
+    {
+      imgSrc: fwshk,
+      altText: "Fruit",
+      title: "Dried fruits Fruit",
+      description: "Natural Sugar",
+      price: "........... 10,000 IQD",
+      category: "FRUIT",
+      type: "FRUIT"
+    },
+   
+    {
+      imgSrc: fjg,
+      altText: "fjg",
+      title: "Fruit Juice",
+      description: "Fruit Juice Carrot",
+      price: "........... 5,000 IQD",
+      category: "COLD DRINK",
+      type: "FRUIT JUICE"
+    },
+    {
+      imgSrc: cake3,
+      altText: "cake3",
+      title: "CAKE",
+      description:"Strawberry Cake",
+      price: "........... 5,000 IQD",
+      category: "CAKE",
+    },
+    {
+      imgSrc: fjapp,
+      altText: "fjapp",
+      title: "Fruit Juice",
+      description: "Fruit Juice Apple",
+      price: "........... 5,000 IQD",
+      category: "COLD DRINK",
+      type: "FRUIT JUICE"
+    },
+    {
+      imgSrc: special_damlasakizli_dibek_kahvesi_ten,
+      altText: "special_damlasakizli_dibek_kahvesi_ten Coffee",
+      title: "Special Damlasakizli Dibek Coffee Ten",
+      description: "Coffee",
+      price: "........... 8,000 IQD",
+      category: "HOT DRINK",
+      type: "PAWDER COFFEE"
+    },
+    {
+      imgSrc: fjp,
+      altText: "fjp",
+      title: "Fruit Juice",
+      description: "Fruit Juice Pineapple",
+      price: "........... 5,000 IQD",
+      category: "COLD DRINK",
+      type: "FRUIT JUICE"
+    },
+    {
+      imgSrc: fjkiwi,
+      altText: "fjkiwi",
+      title: "Fruit Juice",
+      description: "Fruit Juice Kiwi",
+      price: "........... 5,000 IQD",
+      category: "COLD DRINK",
+      type: "FRUIT JUICE"
+    },
+    {
+      imgSrc: fjk,
+      altText: "fjk",
+      title: "Fruit Juice",
+      description: "Fruit Juice Melon",
+      price: "........... 5,000 IQD",
+      category: "COLD DRINK",
+      type: "FRUIT JUICE"
+    },
+    {
+      imgSrc: fjo,
+      altText: "fjo",
+      title: "Fruit Juice",
+      description: "Fruit Juice Orange",
+      price: "........... 4,000 IQD",
+      category: "COLD DRINK",
+      type: "FRUIT JUICE"
+    },
+    {
+      imgSrc: fjbm,
+      altText: "fjbm",
+      title: "Fruit Juice",
+      description: "Fruit Juice Bnana and Milk",
+      price: "........... 5,000 IQD",
+      category: "COLD DRINK",
+      type: "FRUIT JUICE"
+    },
+    {
+      imgSrc: fjpl,
+      altText: "fjpl",
+      title: "Fruit Juice",
+      description: "Fruit Juice Orang and Lemon",
+      price: "........... 5,000 IQD",
+      category: "COLD DRINK",
+      type: "FRUIT JUICE"
+    },
+    
+    {
+      imgSrc: fruit,
+      altText: "Fruit",
+      title: "A Big Bowl of Fruit",
+      description: "Natural Sugar",
+      price: "........... 10,000 IQD",
+      category: "FRUIT",
+      type: "FRUIT"
+    },
+    
+    {
+      imgSrc: ice3,
+      altText: "ice3 cold drink",
+      title: "Special Ice Cream",
+      description: "1/3 Fruit, 2/3 milk",
+      price: "........... 2,000 IQD",
+      category: "COLD DRINK",
+      type: "ICE CREAM"
+    },
+    {
+      imgSrc: ice2,
+      altText: "ice2 cold drink",
+      title: "Special Ice Cream",
+      description: "2/3 Fruit, 1/3 milk",
+      price: "........... 4,000 IQD",
+      category: "COLD DRINK",
+      type: "ICE CREAM"
+    },
+    {
+      imgSrc: ice1,
+      altText: "ice1 cold drink",
+      title: "Ice Cream",
+      description: "1/3 Fruit, 2/3 milk",
+      price: "........... 1,000 IQD",
+      category: "COLD DRINK",
+      type: "ICE CREAM"
+    },
+    {
+      imgSrc: coldDrinkAllMenu,
+      altText: "Milk Coffee",
+      title: "Milk Shake Lotos",
+      description: "1/3 Chocolate, 2/3 steamed milk",
+      price: "........... 6,000 IQD",
+      category: "COLD DRINK",
+      type: "COLD DRINK"
+    },
     {
       imgSrc: Special_Damla_Sakizli_Dibek_Coffee,
       altText: " Special_Damla_Sakizli_Dibek_Coffee Coffee",
@@ -300,15 +706,7 @@ const Menu = () => {
       category: "HOT DRINK",
       type: "PAWDER COFFEE"
     },
-    {
-      imgSrc: Artukbey_7_Si_Bir_Arada_Dibek_Coffee_100gr,
-      altText: "Artukbey_7_Si_Bir_Arada_Dibek_Coffee_100gr Coffee",
-      title: "Artukbey 7 Si Bir Arada Dibek Coffee 100gr",
-      description: "Coffee",
-      price: "........... 6,000 IQD",
-      category: "HOT DRINK",
-      type: "PAWDER COFFEE"
-    },
+    
     {
       imgSrc: Artukbey_Suryani_Dibek_Coffee_Kese_200gr,
       altText: "Artukbey_Suryani_Dibek_Coffee_Kese_100gr Coffee",
@@ -516,15 +914,7 @@ const Menu = () => {
       category: "HOT DRINK",
       type: "PAWDER COFFEE"
     },
-    {
-      imgSrc: menengic_kahve_100gr,
-      altText: "Turkish Coffee",
-      title: "Menengic Coffee 100gr ",
-      description: "Coffee",
-      price: "........... 6,000 IQD",
-      category: "HOT DRINK",
-      type: "PAWDER COFFEE"
-    },
+    
     
     {
       imgSrc: hotDrink,
@@ -546,14 +936,7 @@ const Menu = () => {
     },
     
   
-    {
-      imgSrc: coldDrinkAllMenu,
-      altText: "Milk Coffee",
-      title: "Milk Shake Lotos",
-      description: "1/3 Chocolate, 2/3 steamed milk",
-      price: "........... 6,000 IQD",
-      category: "COLD DRINK",
-    },
+    
     {
       imgSrc: tralichaAllMenu,
       altText: "Tralicha Cake",
@@ -578,43 +961,46 @@ const Menu = () => {
       price: "........... 7,000 IQD",
       category: "SWEET",
     },
-    {
-      imgSrc: fruitAllMenu,
-      altText: "Fruit",
-      title: "Fruit",
-      description: "Natural Sugar",
-      price: "........... 5,000 IQD",
-      category: "FRUIT",
-    },
+   
   ];
+
 
   const allCategories = ["ALL", "HOT DRINK", "COLD DRINK", "SWEET", "NUT", "CAKE", "FRUIT"];
   const hotDrinkCategories = ["ALL COFFEE", "PAWDER COFFEE", "PICES COFFEE", "TAKEAWAY COFFEE"];
+  const coldDrinkCategories = ["ALL DRINK", "ICE CREAM", "FRUIT JUICE", "MOCKTAIL", "SMOOTHIE"];
 
   const filteredMenuItems = allMenuItems.filter(item => {
     if (activeCategory === "ALL") return true;
     if (activeCategory === "HOT DRINK" && activeSubcategory !== "ALL COFFEE") {
       return item.category === activeCategory && item.type === activeSubcategory;
     }
+    if (activeCategory === "COLD DRINK" && activeSubcategory !== "ALL DRINK") {
+      return item.category === activeCategory && item.type === activeSubcategory;
+    }
     return item.category === activeCategory;
   });
 
   useEffect(() => {
-    // Reset the subcategory when the main category changes
-    setActiveSubcategory("ALL COFFEE");
+    // Reset subcategory when the main category changes
+    if (activeCategory === "HOT DRINK") {
+      setActiveSubcategory("ALL COFFEE");
+    } else if (activeCategory === "COLD DRINK") {
+      setActiveSubcategory("ALL DRINK");
+    }
   }, [activeCategory]);
 
   return (
     <section
+    
       className="section bg-cover bg-center min-h-screen py-5"
       style={{ backgroundImage: `url(${category_bg})` }}
     >
       <div className="container mx-auto p-5 max-w-[1300px]">
         {/* Text Section */}
         <div className="text-center my-12">
-          <div className="text-yellow-500 uppercase">Choose Best Coffee</div>
+          <div className="text-primary uppercase">Choose Best Coffee</div>
           <h3 className="text-4xl font-bold text-white my-4">
-            Artukbey Kahve Menu
+            Artukbey Cafe Menu
           </h3>
         </div>
 
@@ -633,6 +1019,13 @@ const Menu = () => {
                 categories={hotDrinkCategories}
               />
             )}
+            {activeCategory === "COLD DRINK" && (
+              <CategoryFilter
+                activeCategory={activeSubcategory}
+                setActiveCategory={setActiveSubcategory}
+                categories={coldDrinkCategories}
+              />
+            )}
           </>
         )}
 
@@ -642,7 +1035,7 @@ const Menu = () => {
           style={{ backgroundImage: `url(${menu_logo})` }}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-44 gap-y-20">
-            {path === "/" ?filteredMenuItems.slice(0,6).map((item, index) => (
+            {path === "/" ? filteredMenuItems.slice(0, 6).map((item, index) => (
               <MenuItem
                 key={index}
                 imgSrc={item.imgSrc}
@@ -651,7 +1044,7 @@ const Menu = () => {
                 description={item.description}
                 price={item.price}
               />
-            )):filteredMenuItems.map((item, index) => (
+            )) : filteredMenuItems.map((item, index) => (
               <MenuItem
                 key={index}
                 imgSrc={item.imgSrc}
