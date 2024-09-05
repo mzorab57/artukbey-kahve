@@ -35,8 +35,8 @@ const ServicesSection = ({setMenuOpen}) => {
           alt="Services"
           className="absolute inset-0 w-full h-full object-cover opacity-70"
         />
-        <div className="relative z-10 text-white text-end w-[700px] p-4 md:p-10">
-          <h1 className="text-7xl font-semibold">Services</h1>
+        <div className="relative z-10 text-white md:text-center w-[700px] p-4 md:p-10">
+          <h1 className="md:text-7xl text-4xl font-semibold">Services</h1>
         </div>
       </div>
 

@@ -66,7 +66,7 @@ const Hero = ({ setMenuOpen }) => {
   return (
     <section name="hero" onMouseOut={() => setMenuOpen(false)} className="section kf-started-slider">
       <Swiper
-        className={`swiper-container transition-all h-[795px] duration-200 ease-in-out ${color ? `${paddingTop} transition-all duration-1000` : 'transition-all duration-1000'}`}
+        className={`swiper-container transition-all h-screen lg:h-[795px] duration-200 ease-in-out ${color ? `${paddingTop} transition-all duration-1000` : 'transition-all duration-1000'}`}
         modules={[Navigation, Autoplay]}
         loop={true}
         autoplay={{ delay: 5000 }}

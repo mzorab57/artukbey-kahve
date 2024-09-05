@@ -129,6 +129,13 @@ setOpen(!isOpen)
           >
             Menu
           </a>
+          <a
+            href="services"
+            onClick={() => setOpen(!isOpen)}
+            className="text-2xl hover:text-primary"
+          >
+            Services
+          </a>
         
           <div
           
