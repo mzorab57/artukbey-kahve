@@ -1,17 +1,21 @@
 import React, { useState } from "react";
-import {  scroller } from "react-scroll";
+import { scroller } from "react-scroll";
 import artukbey_logo from "../assets/images/artukbey-logo.jpg";
 import MobileMenu from "./MobileMenu";
 import { FaFacebookF } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useLocation, useNavigate } from "react-router-dom";
+import LanguageSwitcher from "../component/LanguageSwitcher ";
+import { useTranslation } from "react-i18next"; // Import the useTranslation hook
 
 const Navbar = ({ menuOpen, setMenuOpen }) => {
+  const { t } = useTranslation(); // Destructure the translation function
   const location = useLocation();
   const navigate = useNavigate();
   const path = location.pathname;
   const [color, setColor] = useState(false);
+  const [isOpenMenu, setOpenMenu] = useState(false);
 
   const changeHeaderColor = () => {
     window.scrollY >= 20 ? setColor(true) : setColor(false);
@@ -20,16 +24,13 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
 
   const handleHomeClick = () => {
     if (path !== "/") {
-      // If not on the root page, navigate back to root first
       navigate("/");
-      // After navigating, scroll to the hero section
       scroller.scrollTo("hero", {
         smooth: true,
         offset: -200,
         duration: 500,
       });
     } else {
-      // If already on the root page, simply scroll to the hero section
       scroller.scrollTo("hero", {
         smooth: true,
         offset: -200,
@@ -40,16 +41,13 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
 
   const handleAboutClick = () => {
     if (path !== "/") {
-      // If not on the root page, navigate back to the root
       navigate("/");
-      // Scroll to the 'about' section after navigating to the root
       scroller.scrollTo("about", {
         smooth: true,
         offset: 40,
         duration: 500,
       });
     } else {
-      // If already on the root page, directly scroll to the 'about' section
       scroller.scrollTo("about", {
         smooth: true,
         offset: 40,
@@ -60,16 +58,13 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
 
   const handleContactClick = () => {
     if (path !== "/") {
-      // If not on the root page, navigate back to the root
       navigate("/");
-      // Scroll to the 'contacts' section after navigating
       scroller.scrollTo("contacts", {
         smooth: true,
-        offset: 40, // Adjust the offset as needed
+        offset: 40,
         duration: 500,
       });
     } else {
-      // If already on the root page, directly scroll to the 'contacts' section
       scroller.scrollTo("contacts", {
         smooth: true,
         offset: 40,
@@ -79,9 +74,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
   };
 
   return (
-    <div
-      className={`kf-navbar text-white bg-black flex justify-between lg:flex-col`}
-    >
+    <div className={`kf-navbar text-white bg-black flex justify-between lg:flex-col`}>
       {/* Top Bar */}
       <div
         className={`${
@@ -93,8 +86,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
         <div className="flex items-center space-x-3">
           <span className="flex items-center space-x-1">
             <i className="las la-clock text-[#b89272]"></i>
-            <span className="text-[#b89272]">OPENING HOURS </span> : 08:00 AM -
-            12:00 PM
+            <span className="text-[#b89272]">{t("opening_hours")} </span> : {t("opening_time")}
           </span>
         </div>
         {/*  icon */}
@@ -115,12 +107,10 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
 
         <div className="flex items-center space-x-1">
           <i className="las la-map-marker-alt text-[#b89272]"></i>
-          <span className="text-[#b89272]">LOCATION </span> : Rzgari street,
-          next to Firdos Market, Sulaimaniyah
+          <span className="text-[#b89272]">{t("location")} </span> : {t("address")}
         </div>
       </div>
 
-      {/* ama katek nava fixed abe wa aka ka ba xeray u raqi silde ka nacheta zheriawa */}
       {color ? <div className="h-20 bg-gray-950  "></div> : null}
 
       {/* Main Navbar */}
@@ -142,118 +132,59 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
 
         {/* Navigation Menu - Hidden on Mobile */}
         <ul className={`hidden lg:flex space-x-8 font-semibold`}>
-          <li
-            onMouseMove={() => {
-              setMenuOpen(false);
-            }}
-          >
-            <div
-              onClick={handleHomeClick}
-              className="hover:text-[#b89272] cursor-pointer"
-            >
-              HOME
+          <li onMouseMove={() => setMenuOpen(false)}>
+            <div onClick={handleHomeClick} className="hover:text-[#b89272] cursor-pointer">
+              {t("home")}
             </div>
           </li>
 
-          <li
-            onMouseMove={() => {
-              setMenuOpen(false);
-            }}
-          >
-            <div
-              onClick={handleAboutClick}
-              className="hover:text-[#b89272] cursor-pointer"
-            >
-              ABOUT
+          <li onMouseMove={() => setMenuOpen(false)}>
+            <div onClick={handleAboutClick} className="hover:text-[#b89272] cursor-pointer">
+              {t("about")}
             </div>
           </li>
 
-          {/* Menu  */}
-          <li
-            onMouseMove={() => {
-              setMenuOpen(false);
-            }}
-            className="group relative"
-          >
+          {/* Menu */}
+          <li onMouseMove={() => setMenuOpen(false)} className="group relative">
             <a href="/menu" className="hover:text-[#b89272]">
-              MENU
+              {t("menu")}
               <i className="las la-angle-down ml-1"></i>
             </a>
           </li>
 
-          {/* page */}
-          <li
-            onMouseMove={() => {
-              setMenuOpen(true);
-            }}
-            className=""
-          >
+          {/* Pages */}
+          <li onMouseMove={() => setMenuOpen(true)}>
             <a href="#" className="hover:text-[#b89272] flex justify-center ">
-              PAGES <MdKeyboardArrowDown size={25} />
+              {t("pages")} <MdKeyboardArrowDown size={25} />
               <i className="las la-angle-down ml-1"></i>
             </a>
             {/* Dropdown for Pages */}
             <ul
               className={`absolute z-50 font-normal bg-black text-white p-4 space-y-2 mt-2 w-40 duration-300 ease-in-out ${
-                menuOpen
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 -translate-y-5 pointer-events-none"
+                menuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5 pointer-events-none"
               }`}
             >
               <li onClick={() => setMenuOpen(false)}>
                 <a href="/services" className="hover:text-[#b89272]">
-                  Services
+                  {t("services")}
                 </a>
               </li>
-
-              {/* <li onClick={() => setMenuOpen(false)}>
-                <a href="about" className="hover:text-[#b89272]">
-                  History
-                </a>
-              </li> */}
-              {/* 
-              <li onClick={() => setMenuOpen(false)}>
-                <a href="gallery" className="hover:text-[#b89272]">
-                  Gallery
-                </a>
-              </li> */}
-
-              {/* <li onClick={() => setMenuOpen(false)}>
-                <a href="faq" className="hover:text-[#b89272]">
-                  FAQ
-                </a>
-              </li> */}
             </ul>
           </li>
 
-          {/* contact */}
-          <li
-            onMouseMove={() => {
-              setMenuOpen(false);
-            }}
-          >
-            <div
-              onClick={handleContactClick}
-              className="hover:text-[#b89272] cursor-pointer"
-            >
-              CONTACTS
+          {/* Contacts */}
+          <li onMouseMove={() => setMenuOpen(false)}>
+            <div onClick={handleContactClick} className="hover:text-[#b89272] cursor-pointer">
+              {t("contacts")}
             </div>
           </li>
         </ul>
 
-        {/* Book a Table Button */}
-        <div className="hidden lg:block">
-          <a
-            href="/"
-            className="bg-primary text-white py-2 px-4 rounded-lg "
-          >
-            BOOK A TABLE
-          </a>
-        </div>
+        <LanguageSwitcher />
       </div>
 
       {/* Mobile Menu */}
-      <MobileMenu />
+      <MobileMenu setOpenMenu={setOpenMenu} isOpenMenu={isOpenMenu}  />
     </div>
   );
 };

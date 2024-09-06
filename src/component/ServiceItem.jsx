@@ -1,6 +1,8 @@
 import React from "react";
 
+
 const ServiceItem = ({ imgSrc, altText, icon, title, onClick }) => {
+
   return (
     <div className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8" onClick={onClick}>
       <div className="relative group cursor-pointer">

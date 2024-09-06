@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-
+import { useTranslation } from "react-i18next"; // Import the useTranslation hook
 import ServiceItem from "../component/ServiceItem";
 
 import { PiCoffee } from "react-icons/pi";
@@ -20,20 +20,22 @@ const Services = () => {
   const location = useLocation();
   const navigate = useNavigate(); // Use navigate hook to programmatically navigate
   const path = location.pathname;
+  const { t } = useTranslation(); // Destructure the translation function
 
   const handleServiceClick = (category) => {
     console.log(category);
-    
     navigate(`/menu/${category}`);
   };
 
   return (
-    <section className={` services ${path === "/" ? 'bg-black' : 'py-12 bg-gray-950/70'}  `}>
+    <section className={`services ${path === "/" ? 'bg-black' : 'py-12 bg-gray-950/70'}`}>
       <div className="container mx-auto px-4 max-w-[1300px]">
         {path !== "/" && (
           <div className="block text-white text-center my-20">
-            <span>WE PROVIDE</span>
-            <h1 className="font-semibold text-4xl py-5">Kaffen Services One</h1>
+            <span>{t("we_provide")}</span>
+            <h1 className="font-semibold text-4xl py-5">
+              {t("services_title")}
+            </h1>
           </div>
         )}
         <div className="flex flex-wrap -mx-4">
@@ -41,42 +43,42 @@ const Services = () => {
             imgSrc={coffee}
             altText="Cofe Menu"
             icon={<PiCoffee className="text-orange-100 text-opacity-60 group-hover:text-opacity-100 group-hover:text-orange-200" />}
-            title="Hot Drinks"
+            title={t("hot_drinks")} // Translated title
             onClick={() => handleServiceClick("hot-drinks")} // Navigate to Menu component with category
           />
           <ServiceItem
             imgSrc={coldDrinks}
             altText="Cold Menu"
             icon={<BiDrink className="text-orange-100 text-opacity-60 group-hover:text-opacity-100 group-hover:text-orange-200" />}
-            title="Cold Drinks"
+            title={t("cold_drinks")} // Translated title
             onClick={() => handleServiceClick("cold-drinks")}
           />
           <ServiceItem
             imgSrc={cake}
             altText="Cake Menu"
             icon={<LuCakeSlice className="text-orange-100 text-opacity-80 group-hover:text-opacity-100 group-hover:text-orange-200" />}
-            title="Cake Menu"
+            title={t("cake_menu")} // Translated title
             onClick={() => handleServiceClick("cakes")}
           />
           <ServiceItem
             imgSrc={charas}
             altText="Charas Menu"
             icon={<FaBowlFood className="text-orange-100 text-opacity-80 group-hover:text-opacity-100 group-hover:text-orange-200" />}
-            title="Nut Menu"
+            title={t("nut_menu")} // Translated title
             onClick={() => handleServiceClick("nuts")}
           />
           <ServiceItem
             imgSrc={sweet}
             altText="Sweet Menu"
             icon={<GiWrappedSweet className="text-orange-100 text-opacity-80 group-hover:text-opacity-100 group-hover:text-orange-200" />}
-            title="Sweet Menu"
+            title={t("sweet_menu")} // Translated title
             onClick={() => handleServiceClick("sweets")}
           />
           <ServiceItem
             imgSrc={fruit}
             altText="Fruit Menu"
             icon={<GiFruitBowl className="text-orange-100 text-opacity-80 group-hover:text-opacity-100 group-hover:text-orange-200" />}
-            title="Fruit Menu"
+            title={t("fruit_menu")} // Translated title
             onClick={() => handleServiceClick("fruits")}
           />
         </div>
