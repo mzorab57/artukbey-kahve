@@ -120,7 +120,7 @@ const Hero = () => {
     <section name="hero" className="section  kf-started-slider">
       <Swiper
         key={i18n.language} // Re-initialize Swiper when language changes
-        className={`swiper-container transition-all h-screen lg:h-[720px] duration-200 ease-in-out ${
+        className={`swiper-container transition-all h-screen lg:h-[820px] duration-200 ease-in-out ${
           color
             ? `${paddingTop} transition-all duration-1000`
             : 'transition-all duration-1000'
