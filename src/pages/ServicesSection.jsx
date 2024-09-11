@@ -2,16 +2,14 @@ import React, { useState } from "react";
 import servicesSectionImage from "../assets/images/services-section.jpg";
 // import coffeeImage from "../assets/images/cup-coffee-with-word-coffee-it.jpg";
 import Services from "../pages/Services";
-import { useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 
-const ServicesSection = ({setMenuOpen}) => {
+const ServicesSection = () => {
+  const { t } = useTranslation();
 
   const [color, setColor] = useState(false);
   const [p, setP] = useState('');
-
-  const location = useLocation();
-  const path = location.pathname;
   
   const changeHeaderColor = () => {
     if ( window.scrollY >=  5) {
@@ -36,7 +34,7 @@ const ServicesSection = ({setMenuOpen}) => {
           className="absolute inset-0 w-full h-full object-cover opacity-70"
         />
         <div className="relative z-10 text-white md:text-center w-[700px] p-4 md:p-10">
-          <h1 className="md:text-7xl text-4xl font-semibold">Services</h1>
+          <h1 className="md:text-7xl text-4xl font-semibold">{t("services")}</h1>
         </div>
       </div>
 

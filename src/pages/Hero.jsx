@@ -4,7 +4,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import { Navigation, Autoplay } from "swiper/modules";
-import { Link } from "react-router-dom";
 import { scroller } from "react-scroll"; // Import scroller from react-scroll
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion"; // Import framer-motion
