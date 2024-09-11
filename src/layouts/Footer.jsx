@@ -1,5 +1,5 @@
 import React from 'react';
-import chooseImage from '../assets/images/barista-making-cup-coffee.jpg';
+// import chooseImage from '../assets/images/barista-making-cup-coffee.jpg';
 import logo from '../assets/images/artukbey-logo.jpg';
 import g2 from '../assets/images/cake3.jpg';
 import g3 from '../assets/images/carousel1.jpg';
