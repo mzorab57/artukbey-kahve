@@ -23,15 +23,15 @@ const Services = () => {
   const { t } = useTranslation(); // Destructure the translation function
 
   const handleServiceClick = (category) => {
-    console.log(category);
-    navigate(`/menu/${category}`);
+    window.scrollTo({ top: 0 });
+    navigate(`/menu`);
   };
 
   return (
     <section className={`services ${path === "/" ? 'bg-black' : 'py-12 bg-gray-950/70'}`}>
       <div className="container mx-auto px-4 max-w-[1300px]">
         {path !== "/" && (
-          <div className="block text-white text-center my-20">
+          <div className="block text-white text-center my-5">
             <span>{t("we_provide")}</span>
             <h1 className="font-semibold text-4xl py-5">
               {t("services_title")}

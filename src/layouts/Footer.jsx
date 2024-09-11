@@ -37,7 +37,7 @@ const Footer = () => {
               </li>
               <li className="mb-2">
                 <span className="block">{t("only_friday")}</span>
-                <span className="text-gray-400">11:00 pm - 12:00 pm</span>
+                <span className="text-gray-400">11:00 am - 12:00 pm</span>
               </li>
             </ul>
           </div>

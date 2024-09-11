@@ -128,7 +128,7 @@ const Menu = () => {
       altText: "Turkish Coffee",
       title: t("turkish_coffee"),  // Use translated title
       description: t("2/3 espresso, 1/3 steamed milk"),  // Translate description
-      price: "........... 2,000 IQD",
+      price: "* * * * *",
       category: t("hot_drink"),
       type: t("pawder_coffee")
     },
@@ -137,7 +137,7 @@ const Menu = () => {
       altText: "Fruit1",
       title: t("small_bowl_fruit"),
       description: t("natural_sugar"),
-      price: "........... 5,000 IQD",
+      price: "* * * * *",
       category: t("fruit"),
       type: t("fruit")
     },
@@ -146,7 +146,7 @@ const Menu = () => {
       altText: "cake2",
       title: t("peanuts_cake"),
       description: t("peanuts_cake"),
-      price: "........... 6,000 IQD",
+      price: "* * * * *",
       category: t("cake"),
     },
     {
@@ -154,7 +154,7 @@ const Menu = () => {
       altText: "Milk Coffee",
       title: t("milk_shake_lotus"),
       description: t("1/3 Chocolate, 2/3 steamed milk"),
-      price: "........... 6,000 IQD",
+      price: "* * * * *",
       category: t("cold_drink"),
       type: t("cold_drink")
     },
@@ -163,7 +163,7 @@ const Menu = () => {
       altText: "ice1 cold drink",
       title: t("ice_cream"),
       description: t("1/3 Fruit, 2/3 milk"),
-      price: "........... 1,000 IQD",
+      price: "* * * * *",
       category: t("cold_drink"),
       type: t("ice_cream")
     },
@@ -172,7 +172,7 @@ const Menu = () => {
       altText: "cake1",
       title: t("chocolate_cake"),
       description: t("chocolate_cake"),
-      price: "........... 5,000 IQD",
+      price: "* * * * *",
       category: t("cake"),
     },
     {
@@ -180,7 +180,7 @@ const Menu = () => {
       altText: "smoothi6",
       title: t("kiwi_smoothie"),
       description: t("kiwi_smoothie"),
-      price: "........... 5,000 IQD",
+      price: "* * * * *",
       category: t("cold_drink"),
       type: t("smoothie")
     },
@@ -189,7 +189,7 @@ const Menu = () => {
       altText: "mocktail2",
       title: t("watermelon_mocktail"),
       description: t("watermelon_mocktail"),
-      price: "........... 5,000 IQD",
+      price: "* * * * *",
       category: t("cold_drink"),
       type: t("mocktail")
     },
@@ -198,7 +198,7 @@ const Menu = () => {
       altText: "smoothi5",
       title: t("banana_smoothie"),
       description: t("banana_smoothie"),
-      price: "........... 5,000 IQD",
+      price: "* * * * *",
       category: t("cold_drink"),
       type: t("smoothie")
     },
@@ -207,7 +207,7 @@ const Menu = () => {
       altText: "smoothi4",
       title: t("strawberry_smoothie"),
       description: t("strawberry_smoothie"),
-      price: "........... 5,000 IQD",
+      price: "* * * * *",
       category: t("cold_drink"),
       type: t("smoothie")
     },
@@ -216,7 +216,7 @@ const Menu = () => {
       altText: "smoothi3",
       title: t("melon_smoothie"),
       description: t("melon_smoothie"),
-      price: "........... 5,000 IQD",
+      price: "* * * * *",
       category: t("cold_drink"),
       type: t("smoothie")
     },
@@ -225,7 +225,7 @@ const Menu = () => {
       altText: "smoothi2",
       title: t("apple_smoothie"),
       description: t("apple_smoothie"),
-      price: "........... 5,000 IQD",
+      price: "* * * * *",
       category: t("cold_drink"),
       type: t("smoothie")
     },
@@ -234,7 +234,7 @@ const Menu = () => {
       altText: "mocktail10",
       title: t("red_bull_mocktail"),
       description: t("red_bull_mocktail"),
-      price: "........... 5,000 IQD",
+      price: "* * * * *",
       category: t("cold_drink"),
       type: t("mocktail")
     },
@@ -243,7 +243,7 @@ const Menu = () => {
       altText: "fjh",
       title: t("pomegranate_juice"),
       description: t("fruit_juice"),
-      price: "........... 5,000 IQD",
+      price: "* * * * *",
       category: t("cold_drink"),
       type: t("fruit_juice")
     },
@@ -252,7 +252,7 @@ const Menu = () => {
       altText: "fjk",
       title: t("melon_juice"),
       description: t("fruit_juice"),
-      price: "........... 5,000 IQD",
+      price: "* * * * *",
       category: t("cold_drink"),
       type: t("fruit_juice")
     },
@@ -261,7 +261,7 @@ const Menu = () => {
       altText: "Fruit",
       title: t("big_bowl_fruit"),
       description: t("natural_sugar"),
-      price: "........... 10,000 IQD",
+      price: ".* * * * *",
       category: t("fruit"),
       type: t("fruit")
     },
@@ -270,7 +270,7 @@ const Menu = () => {
       altText: "ice3 cold drink",
       title: t("special_ice_cream"),
       description: t("1/3 Fruit, 2/3 milk"),
-      price: "........... 2,000 IQD",
+      price: "* * * * *",
       category: t("cold_drink"),
       type: t("ice_cream")
     },
@@ -279,7 +279,7 @@ const Menu = () => {
       altText: "ice2 cold drink",
       title: t("special_ice_cream"),
       description: t("2/3 Fruit, 1/3 milk"),
-      price: "........... 4,000 IQD",
+      price: "* * * * *",
       category: t("cold_drink"),
       type: t("ice_cream")
     },
@@ -288,7 +288,7 @@ const Menu = () => {
       altText: "Special Damla Sakizli Dibek Coffee",
       title: t("special_damla_sakizli_dibek_coffee"),
       description: t("coffee"),
-      price: "........... 16,000 IQD",
+      price: ".* * * * *",
       category: t("hot_drink"),
       type: t("takeaway_coffee")
     },
@@ -297,7 +297,7 @@ const Menu = () => {
       altText: "Special Menengic Coffee Hazir Set",
       title: t("special_menengic_coffee_ready_set"),
       description: t("coffee"),
-      price: "........... 16,000 IQD",
+      price: ".* * * * *",
       category: t("hot_drink"),
       type: t("takeaway_coffee")
     },
@@ -306,7 +306,7 @@ const Menu = () => {
       altText: "Sade Turkish Coffee Hazir Set",
       title: t("plain_turkish_coffee_ready_set"),
       description: t("coffee"),
-      price: "........... 10,000 IQD",
+      price: ".* * * * *",
       category: t("hot_drink"),
       type: t("takeaway_coffee")
     },
@@ -315,7 +315,7 @@ const Menu = () => {
       altText: "Hazirset Sicak Cikolata (40 pieces * 25gr)",
       title: t("ready_hot_chocolate"),
       description: t("40_pieces_25gr"),
-      price: "........... 51,000 IQD",
+      price: ".* * * * *",
       category: t("hot_drink"),
       type: t("takeaway_coffee")
     },
@@ -324,7 +324,7 @@ const Menu = () => {
       altText: "Gold Coffee (50 Piece * 2gr)",
       title: t("gold_coffee"),
       description: t("50_piece_2gr"),
-      price: "........... 21,000 IQD",
+      price: ".* * * * *",
       category: t("hot_drink"),
       type: t("takeaway_coffee")
     },
@@ -333,7 +333,7 @@ const Menu = () => {
       altText: "Blend Filtre Coffee 250gr",
       title: t("blend_filtre_coffee"),
       description: t("250gr_coffee"),
-      price: "........... 35,000 IQD",
+      price: ".* * * * *",
       category: t("hot_drink"),
       type: t("pieces_coffee")
     },
@@ -342,7 +342,7 @@ const Menu = () => {
       altText: "Columbia Filtre Coffee 250gr",
       title: t("columbia_filtre_coffee"),
       description: t("250gr_coffee"),
-      price: "........... 22,000 IQD",
+      price: ".* * * * *",
       category: t("hot_drink"),
       type: t("pieces_coffee")
     },
@@ -351,7 +351,7 @@ const Menu = () => {
       altText: "Ethiopia Filtre Coffee Cekirdegi 250gr",
       title: t("ethiopia_filtre_coffee"),
       description: t("250gr_coffee"),
-      price: "........... 25,000 IQD",
+      price: ".* * * * *",
       category: t("hot_drink"),
       type: t("pieces_coffee")
     },
@@ -360,7 +360,7 @@ const Menu = () => {
       altText: "Kenya Filtre Coffee Cekirdegi 250gr",
       title: t("kenya_filtre_coffee"),
       description: t("250gr_coffee"),
-      price: "........... 15,000 IQD",
+      price: ".* * * * *",
       category: t("hot_drink"),
       type: t("pieces_coffee")
     },
@@ -369,7 +369,7 @@ const Menu = () => {
       altText: "Costa Rica Filtre Coffee 250gr",
       title: t("costa_rica_filtre_coffee"),
       description: t("250gr_coffee"),
-      price: "........... 7,000 IQD",
+      price: "* * * * *",
       category: t("hot_drink"),
       type: t("pieces_coffee")
     },
@@ -378,7 +378,7 @@ const Menu = () => {
       altText: "Classic Filtre Coffee 250gr",
       title: t("classic_filtre_coffee"),
       description: t("250gr_coffee"),
-      price: "........... 4,000 IQD",
+      price: "* * * * *",
       category: t("hot_drink"),
       type: t("pieces_coffee")
     },
@@ -387,7 +387,7 @@ const Menu = () => {
       altText: "Artukbey Filtre Coffee 1 kg",
       title: t("artukbey_filtre_coffee_1kg"),
       description: t("1kg_coffee"),
-      price: "........... 5,000 IQD",
+      price: "* * * * *",
       category: t("hot_drink"),
       type: t("pieces_coffee")
     },
@@ -396,7 +396,7 @@ const Menu = () => {
       altText: "Special Coffee 100gr",
       title: t("special_coffee_100gr"),
       description: t("coffee"),
-      price: "........... 7,000 IQD",
+      price: "* * * * *",
       category: t("hot_drink"),
       type: t("pawder_coffee")
     },
@@ -405,7 +405,7 @@ const Menu = () => {
       altText: "Espresso Coffee Cekirdegi 1kg",
       title: t("espresso_coffee"),
       description: t("1kg_coffee"),
-      price: "........... 6,000 IQD",
+      price: "* * * * *",
       category: t("hot_drink"),
       type: t("pawder_coffee")
     },
@@ -414,7 +414,7 @@ const Menu = () => {
       altText: "Special Damla Sakizli Dibek Coffee 100gr",
       title: t("special_damla_sakizli_dibek_kese"),
       description: t("coffee"),
-      price: "........... 6,000 IQD",
+      price: "* * * * *",
       category: t("hot_drink"),
       type: t("pawder_coffee")
     },
@@ -423,7 +423,7 @@ const Menu = () => {
       altText: "Artukbey Kayisili Dibek Coffee Kese 200gr",
       title: t("artukbey_kayisili_dibek_coffee"),
       description: t("coffee"),
-      price: "........... 6,000 IQD",
+      price: "* * * * *",
       category: t("hot_drink"),
       type: t("pawder_coffee")
     },
@@ -432,7 +432,7 @@ const Menu = () => {
       altText: "Artukbey Damla Sakizli Dibek Coffee 100gr",
       title: t("artukbey_damla_sakizli_dibek_coffee"),
       description: t("coffee"),
-      price: "........... 6,000 IQD",
+      price: "* * * * *",
       category: t("hot_drink"),
       type: t("pawder_coffee")
     },
@@ -441,7 +441,7 @@ const Menu = () => {
       altText: "Artukbey Suryani Dibek Coffee Kese 200gr",
       title: t("artukbey_suryani_dibek_coffee"),
       description: t("coffee"),
-      price: "........... 6,000 IQD",
+      price: "* * * * *",
       category: t("hot_drink"),
       type: t("pawder_coffee")
     },
@@ -450,7 +450,7 @@ const Menu = () => {
       altText: "Artukbey Menengic Coffee Kese 200gr",
       title: t("artukbey_menengic_coffee"),
       description: t("coffee"),
-      price: "........... 6,000 IQD",
+      price: "* * * * *",
       category: t("hot_drink"),
       type: t("pawder_coffee")
     },
@@ -459,7 +459,7 @@ const Menu = () => {
       altText: "Artukbey Kakuleli Dibek Coffee Kese",
       title: t("artukbey_kakuleli_dibek_coffee"),
       description: t("coffee"),
-      price: "........... 6,000 IQD",
+      price: "* * * * *",
       category: t("hot_drink"),
       type: t("pawder_coffee")
     },
@@ -468,7 +468,7 @@ const Menu = () => {
       altText: "Special Dibek Coffee Kese 100gr",
       title: t("special_dibek_coffee_kese"),
       description: t("coffee"),
-      price: "........... 6,000 IQD",
+      price: "* * * * *",
       category: t("hot_drink"),
       type: t("pawder_coffee")
     },
@@ -477,7 +477,7 @@ const Menu = () => {
       altText: "Artukbey Sade Dibek Turkish Coffee Kese",
       title: t("artukbey_sade_dibek_turkish_coffee"),
       description: t("coffee"),
-      price: "........... 8,000 IQD",
+      price: "* * * * *",
       category: t("hot_drink"),
       type: t("pawder_coffee")
     },
@@ -486,7 +486,7 @@ const Menu = () => {
       altText: "Artukbey 7 Si 1 Arada Dibek Coffee 300gr",
       title: t("artukbey_7_in_1_dibek_coffee"),
       description: t("coffee"),
-      price: "........... 13,000 IQD",
+      price: ".* * * * *",
       category: t("hot_drink"),
       type: t("pawder_coffee")
     },
@@ -495,7 +495,7 @@ const Menu = () => {
       altText: "Srtukbey Kakuleli Dibek Coffee 400gr",
       title: t("srtukbey_kakuleli_dibek_coffee"),
       description: t("coffee"),
-      price: "........... 10,000 IQD",
+      price: ".* * * * *",
       category: t("hot_drink"),
       type: t("pawder_coffee")
     },
@@ -504,7 +504,7 @@ const Menu = () => {
       altText: "Artukbey Findikli Dibek Coffee 300gr",
       title: t("artukbey_findikli_dibek_coffee"),
       description: t("coffee"),
-      price: "........... 7,000 IQD",
+      price: "* * * * *",
       category: t("hot_drink"),
       type: t("pawder_coffee")
     },
@@ -513,7 +513,7 @@ const Menu = () => {
       altText: "Artukbey Damla Sakizli Turk Coffee 400gr",
       title: t("artukbey_damla_sakizli_turk_coffee"),
       description: t("coffee"),
-      price: "........... 6,000 IQD",
+      price: "* * * * *",
       category: t("hot_drink"),
       type: t("pawder_coffee")
     },
@@ -522,7 +522,7 @@ const Menu = () => {
       altText: "Bitter Cikolatali Dibek Coffee 400gr",
       title: t("bitter_cikolatali_dibek_coffee"),
       description: t("coffee"),
-      price: "........... 4,000 IQD",
+      price: "* * * * *",
       category: t("hot_drink"),
       type: t("pawder_coffee")
     },
@@ -531,7 +531,7 @@ const Menu = () => {
       altText: "Special Dibek Kahvesi 300gr",
       title: t("special_dibek_coffee_300gr"),
       description: t("coffee"),
-      price: "........... 4,000 IQD",
+      price: "* * * * *",
       category: t("hot_drink"),
       type: t("pawder_coffee")
     },
@@ -540,7 +540,7 @@ const Menu = () => {
       altText: "Artukbey Sade Dibek Turk Coffee 300gr",
       title: t("artukbey_sade_dibek_turk_coffee_300gr"),
       description: t("coffee"),
-      price: "........... 4,000 IQD",
+      price: "* * * * *",
       category: t("hot_drink"),
       type: t("pawder_coffee")
     },
@@ -549,7 +549,7 @@ const Menu = () => {
       altText: "Artukbey Antep Fistikli Dibek Coffee",
       title: t("artukbey_antep_fistikli_dibek_coffee"),
       description: t("coffee"),
-      price: "........... 4,000 IQD",
+      price: "* * * * *",
       category: t("hot_drink"),
       type: t("pawder_coffee")
     },
@@ -558,7 +558,7 @@ const Menu = () => {
       altText: "Artukbey Menengic Kahvesi 300gr",
       title: t("artukbey_menengic_kahvesi"),
       description: t("coffee"),
-      price: "........... 4,000 IQD",
+      price: "* * * * *",
       category: t("hot_drink"),
       type: t("pawder_coffee")
     },
@@ -567,7 +567,7 @@ const Menu = () => {
       altText: "Special Damla Sakizli Dibek Kahvesi 300gr",
       title: t("special_damla_sakizli_dibek_kahvesi"),
       description: t("coffee"),
-      price: "........... 9,000 IQD",
+      price: "* * * * *",
       category: t("hot_drink"),
       type: t("pawder_coffee")
     },
@@ -576,7 +576,7 @@ const Menu = () => {
       altText: "Artukbey Suryani Dibek Kahvesi 400gr",
       title: t("artukbey_suryani_dibek_kahvesi"),
       description: t("coffee"),
-      price: "........... 6,000 IQD",
+      price: "* * * * *",
       category: t("hot_drink"),
       type: t("pawder_coffee")
     },
@@ -585,7 +585,7 @@ const Menu = () => {
       altText: "Special Damlasakizli Dibek Kahvesi Ten",
       title: t("special_damlasakizli_dibek_kahvesi"),
       description: t("coffee"),
-      price: "........... 8,000 IQD",
+      price: "* * * * *",
       category: t("hot_drink"),
       type: t("pawder_coffee")
     },
@@ -594,7 +594,7 @@ const Menu = () => {
       altText: "Damla Sakizli Turk Kahvesi Teneke Kutu",
       title: t("damlasakizli_turk_kahvesi"),
       description: t("coffee"),
-      price: "........... 15,000 IQD",
+      price: ".* * * * *",
       category: t("hot_drink"),
       type: t("pawder_coffee")
     },
@@ -603,7 +603,7 @@ const Menu = () => {
       altText: "Artukbey Dibek 7 Coffee 3 Bitki Special",
       title: t("artukbey_dibek_7_coffee"),
       description: t("coffee"),
-      price: "........... 15,000 IQD",
+      price: ".* * * * *",
       category: t("hot_drink"),
       type: t("pawder_coffee")
     },
@@ -612,7 +612,7 @@ const Menu = () => {
       altText: "Dibek Coffee Artukbey Turkish Coffee 400g",
       title: t("dibek_coffee_artukbey"),
       description: t("coffee"),
-      price: "........... 15,000 IQD",
+      price: ".* * * * *",
       category: t("hot_drink"),
       type: t("pawder_coffee")
     },
@@ -621,7 +621,7 @@ const Menu = () => {
         altText: "Artukbey Special Damla Sakizli Dibek",
         title: t("artukbey_special_damla_sakizli_dibek"),
         description: t("coffee"),
-        price: "........... 15,000 IQD",
+        price: ".* * * * *",
         category: t("hot_drink"),
         type: t("pawder_coffee")
       },
@@ -630,7 +630,7 @@ const Menu = () => {
         altText: "Menengic Coffee Dibek 100gr",
         title: t("menengic_coffee_dibek"),
         description: t("coffee"),
-        price: "........... 15,000 IQD",
+        price: ".* * * * *",
         category: t("hot_drink"),
         type: t("pawder_coffee")
       },
@@ -639,7 +639,7 @@ const Menu = () => {
         altText: "Artukbey Damla Sakizli Turk Kahvesi 100gr",
         title: t("artukbey_damla_sakizli_turk_kahvesi"),
         description: t("coffee"),
-        price: "........... 7,000 IQD",
+        price: "* * * * *",
         category: t("hot_drink"),
         type: t("pawder_coffee")
       },
@@ -648,7 +648,7 @@ const Menu = () => {
         altText: "Turkish Coffee",
         title: t("turkish_coffee"),
         description: t("2/3_espresso_1/3_steamed_milk"),
-        price: "........... 2,000 IQD",
+        price: "* * * * *",
         category: t("hot_drink"),
         type: t("pawder_coffee")
       },
@@ -657,7 +657,7 @@ const Menu = () => {
         altText: "Artukbey Turk Kahvesi 100gr",
         title: t("artukbey_turk_kahvesi_100gr"),
         description: t("coffee"),
-        price: "........... 8,000 IQD",
+        price: "* * * * *",
         category: t("hot_drink"),
         type: t("pawder_coffee")
       },
@@ -666,7 +666,7 @@ const Menu = () => {
         altText: "Tralicha Cake",
         title: t("tralicha_cake"),
         description: t("chocolate_steamed_milk"),
-        price: "........... 3,000 IQD",
+        price: "* * * * *",
         category: t("cake"),
       },
       {
@@ -674,7 +674,7 @@ const Menu = () => {
         altText: "Badem",
         title: t("badem"),
         description: t("calorie_rich_almond_treat"),
-        price: "........... 10,000 IQD",
+        price: ".* * * * *",
         category: t("nut"),
       },
       {
@@ -682,7 +682,7 @@ const Menu = () => {
         altText: "Dark Chocolate",
         title: t("dark_chocolate"),
         description: t("cocoa_solids_sugar"),
-        price: "........... 7,000 IQD",
+        price: "* * * * *",
         category: t("sweet"),
       },
       {
@@ -690,7 +690,7 @@ const Menu = () => {
         altText: "Peanut Cake",
         title: t("peanut_cake"),
         description: t("delicious_peanut_cake"),
-        price: "........... 6,000 IQD",
+        price: "* * * * *",
         category: t("cake"),
       },
       {
@@ -698,7 +698,7 @@ const Menu = () => {
         altText: "Chocolate Cake",
         title: t("chocolate_cake"),
         description: t("rich_chocolate_cake"),
-        price: "........... 5,000 IQD",
+        price: "* * * * *",
         category: t("cake"),
       },
       {
@@ -706,7 +706,7 @@ const Menu = () => {
         altText: "A Small Bowl of Fruit",
         title: t("small_bowl_fruit"),
         description: t("natural_sugar"),
-        price: "........... 5,000 IQD",
+        price: "* * * * *",
         category: t("fruit"),
         type: t("fruit")
       },
@@ -715,7 +715,7 @@ const Menu = () => {
         altText: "A Big Bowl of Fruit",
         title: t("big_bowl_fruit"),
         description: t("natural_sugar"),
-        price: "........... 10,000 IQD",
+        price: ".* * * * *",
         category: t("fruit"),
         type: t("fruit")
       },
@@ -724,7 +724,7 @@ const Menu = () => {
         altText: "Milk Coffee",
         title: t("milk_shake_lotus"),
         description: t("chocolate_steamed_milk"),
-        price: "........... 6,000 IQD",
+        price: "* * * * *",
         category: t("cold_drink"),
         type: t("cold_drink")
       },
@@ -733,7 +733,7 @@ const Menu = () => {
         altText: "Strawberry and Mint Mocktail",
         title: t("strawberry_mint_mocktail"),
         description: t("refreshing_mocktail"),
-        price: "........... 5,000 IQD",
+        price: "* * * * *",
         category: t("cold_drink"),
         type: t("mocktail")
       },
@@ -742,7 +742,7 @@ const Menu = () => {
         altText: "Special Mocktail",
         title: t("special_mocktail"),
         description: t("signature_mocktail"),
-        price: "........... 5,000 IQD",
+        price: "* * * * *",
         category: t("cold_drink"),
         type: t("mocktail")
       },
@@ -751,7 +751,7 @@ const Menu = () => {
         altText: "Apple Mocktail",
         title: t("apple_mocktail"),
         description: t("fresh_apple_mocktail"),
-        price: "........... 5,000 IQD",
+        price: "* * * * *",
         category: t("cold_drink"),
         type: t("mocktail")
       },
@@ -760,7 +760,7 @@ const Menu = () => {
         altText: "Watermelon and Mint Smoothie",
         title: t("watermelon_mint_smoothie"),
         description: t("refreshing_watermelon_smoothie"),
-        price: "........... 5,000 IQD",
+        price: "* * * * *",
         category: t("cold_drink"),
         type: t("smoothie")
       },
@@ -769,7 +769,7 @@ const Menu = () => {
         altText: "Melon Smoothie",
         title: t("melon_smoothie"),
         description: t("fresh_melon_smoothie"),
-        price: "........... 5,000 IQD",
+        price: "* * * * *",
         category: t("cold_drink"),
         type: t("smoothie")
       },
@@ -778,7 +778,7 @@ const Menu = () => {
         altText: "Ice Cream",
         title: t("ice_cream"),
         description: t("fruit_milk_ice_cream"),
-        price: "........... 1,000 IQD",
+        price: "* * * * *",
         category: t("cold_drink"),
         type: t("ice_cream")
       },
@@ -787,7 +787,7 @@ const Menu = () => {
         altText: "Special Ice Cream",
         title: t("special_ice_cream"),
         description: t("fruit_milk_special_ice_cream"),
-        price: "........... 4,000 IQD",
+        price: "* * * * *",
         category: t("cold_drink"),
         type: t("ice_cream")
       },
@@ -796,7 +796,7 @@ const Menu = () => {
         altText: "Pomegranate Juice",
         title: t("pomegranate_juice"),
         description: t("fresh_pomegranate_juice"),
-        price: "........... 5,000 IQD",
+        price: "* * * * *",
         category: t("cold_drink"),
         type: t("fruit_juice")
       },
@@ -805,7 +805,7 @@ const Menu = () => {
         altText: "Melon Juice",
         title: t("melon_juice"),
         description: t("fresh_melon_juice"),
-        price: "........... 5,000 IQD",
+        price: "* * * * *",
         category: t("cold_drink"),
         type: t("fruit_juice")
       },
@@ -814,7 +814,7 @@ const Menu = () => {
         altText: "Apple Juice",
         title: t("apple_juice"),
         description: t("fresh_apple_juice"),
-        price: "........... 5,000 IQD",
+        price: "* * * * *",
         category: t("cold_drink"),
         type: t("fruit_juice")
       },
@@ -823,7 +823,7 @@ const Menu = () => {
         altText: "Carrot Juice",
         title: t("carrot_juice"),
         description: t("fresh_carrot_juice"),
-        price: "........... 5,000 IQD",
+        price: "* * * * *",
         category: t("cold_drink"),
         type: t("fruit_juice")
       },
@@ -832,7 +832,7 @@ const Menu = () => {
         altText: "Kiwi Juice",
         title: t("kiwi_juice"),
         description: t("fresh_kiwi_juice"),
-        price: "........... 5,000 IQD",
+        price: "* * * * *",
         category: t("cold_drink"),
         type: t("fruit_juice")
       },
@@ -841,7 +841,7 @@ const Menu = () => {
         altText: "Orange Juice",
         title: t("orange_juice"),
         description: t("fresh_orange_juice"),
-        price: "........... 4,000 IQD",
+        price: "* * * * *",
         category: t("cold_drink"),
         type: t("fruit_juice")
       },
@@ -850,7 +850,7 @@ const Menu = () => {
         altText: "Banana and Milk Juice",
         title: t("banana_milk_juice"),
         description: t("banana_milk_juice_description"),
-        price: "........... 5,000 IQD",
+        price: "* * * * *",
         category: t("cold_drink"),
         type: t("fruit_juice")
       },
@@ -859,7 +859,7 @@ const Menu = () => {
         altText: "Orange and Lemon Juice",
         title: t("orange_lemon_juice"),
         description: t("fresh_orange_lemon_juice"),
-        price: "........... 5,000 IQD",
+        price: "* * * * *",
         category: t("cold_drink"),
         type: t("fruit_juice")
       },
@@ -868,7 +868,7 @@ const Menu = () => {
         altText: "Special Ice Cream",
         title: t("special_ice_cream"),
         description: t("fruit_milk_special_ice_cream"),
-        price: "........... 2,000 IQD",
+        price: "* * * * *",
         category: t("cold_drink"),
         type: t("ice_cream")
       },
@@ -877,7 +877,7 @@ const Menu = () => {
         altText: "Milk Shake Lotus",
         title: t("milk_shake_lotus"),
         description: t("chocolate_steamed_milk"),
-        price: "........... 6,000 IQD",
+        price: "* * * * *",
         category: t("cold_drink"),
         type: t("cold_drink")
       },
@@ -886,7 +886,7 @@ const Menu = () => {
         altText: "Special Damla Gum Dibek Coffee",
         title: t("special_damla_gum_dibek_coffee"),
         description: t("coffee"),
-        price: "........... 16,000 IQD",
+        price: ".* * * * *",
         category: t("hot_drink"),
         type: t("takeaway_coffee")
       },
@@ -895,7 +895,7 @@ const Menu = () => {
         altText: "Special Menengic Coffee Ready Set",
         title: t("special_menengic_coffee_ready_set"),
         description: t("coffee"),
-        price: "........... 16,000 IQD",
+        price: ".* * * * *",
         category: t("hot_drink"),
         type: t("takeaway_coffee")
       },
@@ -904,7 +904,7 @@ const Menu = () => {
         altText: "Plain Turkish Coffee Ready Set",
         title: t("plain_turkish_coffee_ready_set"),
         description: t("coffee"),
-        price: "........... 10,000 IQD",
+        price: ".* * * * *",
         category: t("hot_drink"),
         type: t("takeaway_coffee")
       },
@@ -913,7 +913,7 @@ const Menu = () => {
         altText: "Ready Hot Chocolate",
         title: t("ready_hot_chocolate"),
         description: t("coffee"),
-        price: "........... 51,000 IQD",
+        price: ".* * * * *",
         category: t("hot_drink"),
         type: t("takeaway_coffee")
       },
@@ -922,7 +922,7 @@ const Menu = () => {
         altText: "Gold Coffee",
         title: t("gold_coffee"),
         description: t("coffee"),
-        price: "........... 21,000 IQD",
+        price: ".* * * * *",
         category: t("hot_drink"),
         type: t("takeaway_coffee")
       },
@@ -931,7 +931,7 @@ const Menu = () => {
         altText: "7 in 1 Arada Special Dibek Coffee",
         title: t("special_dibek_coffee_7_in_1"),
         description: t("coffee"),
-        price: "........... 21,000 IQD",
+        price: ".* * * * *",
         category: t("hot_drink"),
         type: t("takeaway_coffee")
       },
@@ -940,7 +940,7 @@ const Menu = () => {
         altText: "2 in 1 Sugar-Free Coffee",
         title: t("sugar_free_coffee_2_in_1"),
         description: t("coffee"),
-        price: "........... 21,000 IQD",
+        price: ".* * * * *",
         category: t("hot_drink"),
         type: t("takeaway_coffee")
       },
@@ -949,7 +949,7 @@ const Menu = () => {
         altText: "Classic Coffee",
         title: t("classic_coffee"),
         description: t("coffee"),
-        price: "........... 21,000 IQD",
+        price: ".* * * * *",
         category: t("hot_drink"),
         type: t("takeaway_coffee")
       },
@@ -958,7 +958,7 @@ const Menu = () => {
         altText: "Guatemala Filtre Coffee",
         title: t("guatemala_filtre_coffee"),
         description: t("coffee"),
-        price: "........... 43,000 IQD",
+        price: ".* * * * *",
         category: t("hot_drink"),
         type: t("pices_coffee")
       },
@@ -967,7 +967,7 @@ const Menu = () => {
         altText: "Blend Filtre Coffee",
         title: t("blend_filtre_coffee"),
         description: t("coffee"),
-        price: "........... 35,000 IQD",
+        price: ".* * * * *",
         category: t("hot_drink"),
         type: t("pices_coffee")
       },
@@ -976,7 +976,7 @@ const Menu = () => {
       //   altText: "Columbia Filtre Coffee",
       //   title: t("columbia_filtre_coffee"),
       //   description: t("coffee"),
-      //   price: "........... 22,000 IQD",
+      //   price: ".* * * * *",
       //   category: t("hot_drink"),
       //   type: t("pices_coffee")
       // },
@@ -985,7 +985,7 @@ const Menu = () => {
         altText: "Ethiopia Filtre Coffee",
         title: t("ethiopia_filtre_coffee"),
         description: t("coffee"),
-        price: "........... 25,000 IQD",
+        price: ".* * * * *",
         category: t("hot_drink"),
         type: t("pices_coffee")
       },
@@ -994,7 +994,7 @@ const Menu = () => {
         altText: "Kenya Filtre Coffee",
         title: t("kenya_filtre_coffee"),
         description: t("coffee"),
-        price: "........... 15,000 IQD",
+        price: ".* * * * *",
         category: t("hot_drink"),
         type: t("pices_coffee")
       },
@@ -1003,7 +1003,7 @@ const Menu = () => {
         altText: "Classic Filtre Coffee",
         title: t("classic_filtre_coffee"),
         description: t("coffee"),
-        price: "........... 4,000 IQD",
+        price: "* * * * *",
         category: t("hot_drink"),
         type: t("pices_coffee")
       },
@@ -1012,7 +1012,7 @@ const Menu = () => {
         altText: "Artukbey Filtre Coffee",
         title: t("artukbey_filtre_coffee"),
         description: t("coffee"),
-        price: "........... 5,000 IQD",
+        price: "* * * * *",
         category: t("hot_drink"),
         type: t("pices_coffee")
       },
@@ -1021,7 +1021,7 @@ const Menu = () => {
         altText: "Special Coffee",
         title: t("special_coffee_100gr"),
         description: t("coffee"),
-        price: "........... 6,000 IQD",
+        price: "* * * * *",
         category: t("hot_drink"),
         type: t("pawder_coffee")
       },

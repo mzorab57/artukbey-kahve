@@ -30,7 +30,7 @@ const AllMenu = ({ setMenuOpen }) => {
     >
       {/* menu Section */}
       <div
-        className={`relative w-full bg-black h-[600px] flex items-center justify-start`}
+        className={`relative w-full bg-black h-[710px] flex items-center justify-start`}
       >
         <img
           src={menuBg}

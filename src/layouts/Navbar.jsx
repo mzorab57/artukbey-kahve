@@ -83,12 +83,15 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
             : "opacity-100 translate-y-0 duration-200 ease-out transition-all"
         } hidden lg:flex justify-between items-center text-sm p-4 px-6 bg-black h-full w-full`}
       >
+
+        {/* time */}
         <div className="flex items-center space-x-3">
           <span className="flex items-center space-x-1">
             <i className="las la-clock text-[#b89272]"></i>
             <span className="text-[#b89272]">{t("opening_hours")} </span> : {t("opening_time")}
           </span>
         </div>
+
         {/*  icon */}
         <div className="flex space-x-3">
           <a
@@ -105,6 +108,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
           </a>
         </div>
 
+        {/* location */}
         <div className="flex items-center space-x-1">
           <i className="las la-map-marker-alt text-[#b89272]"></i>
           <span className="text-[#b89272]">{t("location")} </span> : {t("address")}
