@@ -1280,7 +1280,7 @@ const Menu = () => {
 
   const filteredMenuItems = allMenuItems.filter(item => {
     //mn by default all danawa bo pshan dan ballam la section saraki categoriakanm la brdwa, bo ya abe aw condition dwam ziakam ta filterr menu kam bka u basheki pshan bat
-    if ((activeCategory === t("all") && path === "/menu") || (activeCategory !== t("all") && path !== "/menu")) return true;
+    if (activeCategory === t("all") ) return true;
     if (activeCategory === t("hot_drink") && activeSubcategory !== t("all_coffee")) {
       return item.category === activeCategory && item.type === activeSubcategory;
     }
@@ -1348,10 +1348,8 @@ const Menu = () => {
 >
   <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-44 gap-y-20">
     
-    {filteredMenuItems.length === 0 ? ( 
-      <p className="text-white">{t("please_choose_your_category")}</p>  
-    ) : path === "/" ? (
-      filteredMenuItems.slice(0, 6).map((item, index) => (
+    { path === "/" ? (
+      allMenuItems.slice(0, 6).map((item, index) => (
         <MenuItem
           key={index}
           imgSrc={item.imgSrc}
@@ -1361,6 +1359,8 @@ const Menu = () => {
           price={item.price}
         />
       ))
+    ) :filteredMenuItems.length === 0 ?  ( 
+      <p className="text-white">{t("please_choose_your_category")}</p>  
     ) : (
       filteredMenuItems.map((item, index) => (
         <MenuItem
