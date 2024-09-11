@@ -201,41 +201,45 @@ const MobileMenu = ({ isOpenMenu, setOpenMenu }) => {
                   >
                     Kurdish
                   </div>
-
                 </div>
-
               </div>
             </div>
 
-            {/* time */}
-            <div className="flex place-self-center  items-start text-sm ">
-              <span className="flex gap-x-1 items-start ">
-                <span className="text-[#b89272]">{t("opening_hours")} </span> :{" "}
-                {t("opening_time")}
-              </span>
-            </div>
+            {/* menu footer */}
+            <div className="flex flex-col px-2 text-center items-center justify-center">
+              {/* time */}
+              <div className="flex    text-sm ">
+                <span className="flex gap-x-1 items-start ">
+                  <span className="text-[#b89272]">{t("opening_hours")} </span>{" "}
+                  :<span>{t("opening_time")}</span>
+                </span>
+              </div>
 
-            {/* location */}
-            <div className="flex  gap-x-1 ml-8 text-sm">
-              <span className="text-[#b89272]">{t("location")} </span> :{" "}
-              {t("address")}
-            </div>
+              {/* location */}
+              <div className="flex   gap-x-1  text-sm">
+                <span className="text-[#b89272]">
+                  {t("location")} :{" "}
+                  <span className="text-white">{t("address")}</span>{" "}
+                </span>
+              </div>
 
               {/*  icon */}
-              <div className="flex pt-5 space-x-3">
-              <a
-                href="https://www.facebook.com/share/jjrJrDHLD4kejhEL/?mibextid=qi2Omg"
-                className="text-gray-400 hover:text-white"
-              >
-                <FaFacebookF size={16} />
-              </a>
-              <a
-                href="https://www.instagram.com/artukbey.suli?igsh=d2lld3BpZDVpdW5s"
-                className="text-gray-400 hover:text-white"
-              >
-                <AiFillInstagram size={20} />
-              </a>
+              <div className="flex  pt-5 space-x-3">
+                <a
+                  href="https://www.facebook.com/share/jjrJrDHLD4kejhEL/?mibextid=qi2Omg"
+                  className="text-gray-400 hover:text-white"
+                >
+                  <FaFacebookF size={16} />
+                </a>
+                <a
+                  href="https://www.instagram.com/artukbey.suli?igsh=d2lld3BpZDVpdW5s"
+                  className="text-gray-400 hover:text-white"
+                >
+                  <AiFillInstagram size={20} />
+                </a>
+              </div>
             </div>
+            
           </nav>
         </div>
       </div>

@@ -14,6 +14,12 @@ const FeedBack = () => {
 
   const feedbackList = [
     {
+      image: p4,
+      name: "Amina Omer",
+      title: t("graphic_designer"),
+      feedback: t("feedback4")
+    },
+    {
       image: p1,
       name: "Sarah Adam",
       title: t("web_designer"),
@@ -31,12 +37,7 @@ const FeedBack = () => {
       title: t("customer"),
       feedback: t("feedback3")
     },
-    {
-      image: p4,
-      name: "Amina Omer",
-      title: t("graphic_designer"),
-      feedback: t("feedback4")
-    },
+   
     {
       image: p1,
       name: "David Lee",
