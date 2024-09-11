@@ -1232,15 +1232,15 @@ const Menu = () => {
         category: t("hot_drink"),
         type: t("pawder_coffee")
       },
-      {
-        imgSrc: dibek_coffee_artukbey_turkish_coffee_400g,
-        altText: "Dibek Coffee Artukbey Turkish Coffee",
-        title: t("dibek_coffee_artukbey_turkish_coffee_400g"),
-        description: t("coffee"),
-        price: "........... 15,000 IQD",
-        category: t("hot_drink"),
-        type: t("pawder_coffee")
-      },
+      // {
+      //   imgSrc: dibek_coffee_artukbey_turkish_coffee_400g,
+      //   altText: "Dibek Coffee Artukbey Turkish Coffee",
+      //   title: t("dibek_coffee_artukbey_turkish_coffee_400g"),
+      //   description: t("coffee"),
+      //   price: "........... 15,000 IQD",
+      //   category: t("hot_drink"),
+      //   type: t("pawder_coffee")
+      // },
       {
         imgSrc: artukbey_special_damla_sakizli_dibek,
         altText: "Special Damla Sakizli Dibek Coffee",
@@ -1280,7 +1280,7 @@ const Menu = () => {
 
   const filteredMenuItems = allMenuItems.filter(item => {
     //mn by default all danawa bo pshan dan ballam la section saraki categoriakanm la brdwa, bo ya abe aw condition dwam ziakam ta filterr menu kam bka u basheki pshan bat
-    if (activeCategory === t("all") || (activeCategory !== t("all") && path !== "/menu")) return true;
+    if ((activeCategory === t("all") && path === "/menu") || (activeCategory !== t("all") && path !== "/menu")) return true;
     if (activeCategory === t("hot_drink") && activeSubcategory !== t("all_coffee")) {
       return item.category === activeCategory && item.type === activeSubcategory;
     }
@@ -1302,8 +1302,8 @@ const Menu = () => {
 
   return (
     <section
-      className="section bg-cover bg-center min-h-screen py-5"
-      style={{ backgroundImage: `url(${category_bg})` }}
+      className="section bg-cover bg-black/40 bg-center w-full min-h-screen py-5"
+      style={path === "/" ? { backgroundImage: `url(${category_bg})` }: {}}
     >
       <div className="container mx-auto p-5 max-w-[1300px]">
         {/* Text Section */}
@@ -1311,7 +1311,7 @@ const Menu = () => {
           <div className="text-primary uppercase">
             {t("choose_best_coffee")}
           </div>
-          <h3 className="text-4xl font-bold text-white my-4">
+          <h3 className="md:text-4xl text-2xl  font-bold text-white my-4">
             {t("artukbey_cafe_menu")}
           </h3>
         </div>
@@ -1344,7 +1344,7 @@ const Menu = () => {
         {/* Menu Items */}
         <div
   className="bg-black/40 flex justify-center items-center rounded-lg relative px-5 py-10"
-  style={{ backgroundImage: `url(${menu_logo})` }}
+  style={path === "/" ? { backgroundImage: `url(${menu_logo})`}: {}}
 >
   <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-44 gap-y-20">
     

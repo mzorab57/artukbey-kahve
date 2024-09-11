@@ -74,7 +74,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
   };
 
   return (
-    <div className={`kf-navbar text-white bg-black flex justify-between lg:flex-col`}>
+    <div className={`kf-navbar text-white  flex justify-between lg:flex-col`}>
       {/* Top Bar */}
       <div
         className={`${
@@ -131,9 +131,9 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
         </div>
 
         {/* Navigation Menu - Hidden on Mobile */}
-        <ul className={`hidden lg:flex space-x-8 font-semibold`}>
+        <ul className={`hidden lg:flex space-x-8 rtl:space-x-8 font-semibold`}>
           <li onMouseMove={() => setMenuOpen(false)}>
-            <div onClick={handleHomeClick} className="hover:text-[#b89272] cursor-pointer">
+            <div onClick={handleHomeClick} className="hover:text-[#b89272] cursor-pointer px-6">
               {t("home")}
             </div>
           </li>
@@ -182,9 +182,9 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
 
         <LanguageSwitcher />
       </div>
-
       {/* Mobile Menu */}
       <MobileMenu setOpenMenu={setOpenMenu} isOpenMenu={isOpenMenu}  />
+
     </div>
   );
 };

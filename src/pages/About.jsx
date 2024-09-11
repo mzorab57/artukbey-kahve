@@ -8,18 +8,18 @@ const About = () => {
 
   return (
     <section name="about" className="bg-black py-12">
-      <div className="container max-w-[1280px] mx-auto px-4 flex flex-wrap justify-between items-center">
+      <div className="container max-w-[1380px] mx-auto px-4 flex flex-wrap justify-between items-center">
         {/* Text Section */}
-        <div className="w-full lg:w-1/3 text-white">
+        <div className="w-full lg:w-1/2 text-white">
           <div className="kf-titles mb-6">
             <div className="text-primary uppercase mb-2">
               {t("about_us")}
             </div>
-            <h3 className="text-4xl font-bold mb-4">
+            <h3 className="lg:text-4xl text-2xl  font-bold mb-4">
               {t("about_title")}
             </h3>
           </div>
-          <p className="text-gray-400 mb-6">
+          <p className="text-gray-400 mb-6 text-xs lg:text-sm">
             {t("about_description")}
           </p>
           <div className="flex items-center bg-primary font-semibold rounded-lg p-4">
@@ -35,7 +35,7 @@ const About = () => {
         </div>
 
         {/* Image Section */}
-        <div className="w-full lg:w-7/12 mt-8 lg:mt-0">
+        <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
           <div className="relative">
             <img
               src={about}

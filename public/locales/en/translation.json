@@ -24,10 +24,12 @@
     "slide5_heading": "here is",
     "slide5_subheading": "the Coffee House",
 
+    "allMenu": "All Menu",
+
     "about_us": "About Us",
-    "about_title": "Organic & Fresh Coffee Provider Center",
-    "about_description": "But from where all this comes, born of error, by the will of pleasure, it accuses the pleasure itself of condemning the pain. I shall open the whole matter, and explain the very things that the architect of life, blessed, says are almost true. For no one dislikes or avoids pleasure because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are painful.",
-    "about_quote": "But who has any right to find fault with someone who chooses to enjoy a pleasure that has no annoying consequences?",
+    "about_title": "We Are Telling You a Story That Dates Back to 106 Years Ago...",
+    "about_description": "Everything began when the descendants of a fourth-generation grandfather, who owned a caravan of spices, decided to create an Anatolian brand in Mardin and spread it to the whole world. In this story, where they pursued their dreams, they were inspired by Artuk Bey, the lord of the Artukids, who ruled from Elazig Harput to Diyarbakir and Mardin. For this reason, they announced that the brand they created should be worthy of Anatolia, and the company ARTUKBEY became the successful result of this endeavor. Over the past years, with faith and dedication to hard work, Artukbey has made significant achievements in our country through its coffee and new flavors. Thanks to the innovations they've brought in recent years, their factory, equipped with advanced technology, and their research and development team, who aim to deliver fresh flavors to consumers, Artukbey Kahve, with its expert staff in the field, continues to progress steadily towards its goal, working even more than the day before. Here, we narrate the story of Artukbey, which started with a dream and now stands at a point beyond the dream... Our greatest dream at the moment is to make Artukbey Kahve a Turkish brand, and then achieve recognition among global brands, becoming a world-renowned Turkish brand showcased internationally. We hope to share the taste and aroma of Anatolia with the whole world together with you!.",
+    "about_quote": "We Are Telling You a Story That Dates Back to 106 Years Ago...",
 
     "we_provide": "WE PROVIDE",
     "services_title": "Kaffen Services One",
@@ -56,6 +58,52 @@
     "fruit_juice": "Fruit Juice",
     "mocktail": "Mocktail",
     "smoothie": "Smoothie",
+
+    "why_choose_us": "Why Choose Us",
+    "new_artukbey_coffee": "New Artukbey Coffee: Crafted for an Exceptional Experience",
+    "paragraph_content": "At Artukbey Coffee, we believe that every sip should tell a story of rich heritage and unmatched quality. Our coffee is more than just a drink—it's a journey through time, crafted with passion and precision to deliver an extraordinary taste. We source the finest beans and combine traditional techniques with modern innovation to create a flavor that excites the senses and brings people together. From the first sip to the last, we promise a coffee experience that is both unique and unforgettable.",
+    "natural_coffee_beans": "Pure Natural Coffee Beans",
+    "natural_coffee_beans_desc": "Our coffee beans are sourced from the finest natural plantations, offering a pure and authentic coffee experience with every sip. Handpicked and meticulously processed to ensure unmatched flavor and quality.",
+    "iso_certification": "100% ISO Certified for Quality",
+    "iso_certification_desc": "Our commitment to excellence is reflected in our 100% ISO certification, ensuring that every cup of Artukbey Coffee meets the highest standards of safety, quality, and sustainability.",
+    "explore_more_choose": "Explore More",
+
+
+    "customer_feedback": "Customer Feedback",
+    "what_clients_say": "What Our Clients Say",
+    "feedback1": "The atmosphere is cozy and the coffee is always fresh. A perfect place to relax!",
+    "feedback2": "Their cappuccino is simply the best! I come here every morning.",
+    "feedback3": "Amazing service and a wide selection of desserts. Highly recommended!",
+    "feedback4": "Love the ambiance and the friendly staff. The pastries are to die for!",
+    "feedback5": "A hidden gem in the city! Their iced coffee is a must-try.",
+    "feedback6": "The perfect place for a weekend brunch with friends. Great vibes!",
+    "feedback7": "Their attention to detail is impressive. Every cup of coffee feels special.",
+    "web_designer": "Web Designer",
+    "marketing_manager": "Marketing Manager",
+    "customer": "Customer",
+    "graphic_designer": "Graphic Designer",
+    "coffee_lover": "Coffee Lover",
+    "project_manager": "Project Manager",
+    "chef": "Chef",
+
+    "premium_clients": "Premium Clients",
+    "expert_members": "Expert Members",
+    "winning_awards": "Winning Awards",
+    "description": "Samples of our work",
+
+    "working_hours": "Working Hours",
+    "sunday_thursday": "Sunday - Thursday",
+    "only_friday": "Only Friday",
+    "contact_us": "Contact Us",
+    "email": "artukbey.kahvesuli@gmail.com",
+    "phone": "0772 911 47 47",
+    "gallery": "Gallery",
+    "all_rights_reserved": "All Rights Reserved",
+    "company_name": "TOP SOFT",
+
+    "need_table": "Need a Table On Coffee House",
+    "booking_title": "Booking Table For You & Family Members",
+    "booking_button": "Booking Table",
 
     
     "turkish_coffee": "Turkish Coffee",
@@ -97,6 +145,9 @@
     "special_damla_sakizli_dibek_kese": "Special Damla Sakizli Dibek Coffee",
     "Artukbey_Kayisili_Dibek_Coffee_Kese_200gr":"Kayisili Dibek Coffee kese 200gr",
     "please_choose_your_category":"Please Choose Your Category"
+
+
+
 
       
       

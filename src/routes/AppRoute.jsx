@@ -15,14 +15,15 @@ import AllMenu from "../pages/AllMenu";
 
 const AppRoutes = ({ setMenuOpen }) => {
   return (
-    <>
+    // aw set show service bo awaia katek mouse lasar page lachu la har shwenek bet colse aw hover bkat
+    <div onMouseOut={()=> setMenuOpen(false)}>
       <Routes>
         <Route
           index
           path="/"
           element={
             <>
-              <Hero setMenuOpen={setMenuOpen} />
+              <Hero />
               <About />
               <Services />
               <Menu />
@@ -34,11 +35,11 @@ const AppRoutes = ({ setMenuOpen }) => {
             </>
           }
         />
-        <Route path="/services" element={<ServicesSection setMenuOpen={setMenuOpen} />} />
-        <Route path="/menu" element={<AllMenu setMenuOpen={setMenuOpen} />} />
+        <Route path="/services" element={<ServicesSection />} />
+        <Route path="/menu" element={<AllMenu />} />
         <Route path="/menu/:category" element={<AllMenu />} />
       </Routes>
-    </>
+    </div>
   );
 };
 

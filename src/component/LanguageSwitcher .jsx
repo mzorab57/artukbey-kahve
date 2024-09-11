@@ -30,26 +30,24 @@ const LanguageSwitcher = () => {
   }, []); // Empty dependency array ensures this runs only once on mount
 
   return (
-    <div className={`relative hidden lg:block`}>
+    <div className="hidden lg:block relative">
       {/* Language Icon */}
       <div
         onClick={(e) => {
           e.preventDefault();
           setIsOpen(!isOpen); // Toggle dropdown visibility
         }}
-        className={`cursor-pointer py-2 px-4 rounded-lg ${
+        className={`cursor-pointer py-2 px-4 rounded-lg text-center ${
           isOpen ? "text-primary" : "text-white"
         } hover:text-primary`}
       >
         <GrLanguage size={25} />
       </div>
 
-      {/* Fixed Language Dropdown with Smooth Transition */}
+      {/* Dropdown */}
       <div
-        className={`fixed top-16 right-3 mt-14 py-2 w-28 bg-white border-2 border-primary rounded-lg shadow-xl text-black z-50 transform transition-all duration-500 ease-in-out ${
-          isOpen
-            ? "opacity-100 translate-x-0"
-            : "opacity-0 translate-x-full pointer-events-none"
+        className={`absolute text-center -right-10 mt-2 w-32 py-2 bg-white border-2 border-primary rounded-lg shadow-xl text-black z-50 transition-all duration-300 ease-in-out transform ${
+          isOpen ? "opacity-100 scale-100" : "opacity-0 scale-90 pointer-events-none"
         }`}
       >
         {/* English */}

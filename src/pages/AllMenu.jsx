@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import Menu from "./Menu";
-
 import menuBg from "../assets/images/menu-Bg.jpg";
+import { useTranslation } from "react-i18next"; // Import translation
 
-const AllMenu = ({setMenuOpen}) => {
+const AllMenu = ({ setMenuOpen }) => {
   const [color, setColor] = useState(false);
   const [p, setP] = useState("");
+  const { t } = useTranslation(); // Initialize translation
 
   const changeHeaderColor = () => {
     if (window.scrollY >= 5) {
@@ -20,24 +21,26 @@ const AllMenu = ({setMenuOpen}) => {
 
   return (
     <section
-    onMouseOut={()=> setMenuOpen(false)}
-      className={`text-white  ${
+      onMouseOut={() => setMenuOpen(false)}
+      className={`text-white ${
         color
-          ? `${p}  transition-all duration-1000 ease-in-out`
+          ? `${p} transition-all duration-1000 ease-in-out`
           : " transition-all duration-1000 ease-in-out"
       }`}
     >
-      {/* Hero Section */}
+      {/* menu Section */}
       <div
-        className={` relative w-full bg-black h-[600px] flex items-center justify-start`}
+        className={`relative w-full bg-black h-[600px] flex items-center justify-start`}
       >
         <img
           src={menuBg}
           alt="menu"
           className="absolute inset-0 w-full h-full object-cover opacity-70"
         />
-        <div className="relative z-10 text-white md:text-center w-[700px] p-4 md:p-10">
-          <h1 className="md:text-7xl text-4xl font-semibold">All Menu</h1>
+        <div className="relative z-10 text-white md:text-center max-w-[700px] p-4 md:p-10">
+          <h1 className="md:text-7xl text-2xl font-semibold">
+            {t("allMenu")}
+          </h1>
         </div>
       </div>
 

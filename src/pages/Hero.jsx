@@ -5,7 +5,9 @@ import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import { Navigation, Autoplay } from "swiper/modules";
 import { Link } from "react-router-dom";
+import { scroller } from "react-scroll"; // Import scroller from react-scroll
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion"; // Import framer-motion
 import bg1 from "../assets/images/bg1.jpg";
 import bg2 from "../assets/images/bg2.jpg";
 import bg3 from "../assets/images/bg3.jpg";
@@ -13,14 +15,15 @@ import bg4 from "../assets/images/bg4.jpg";
 import bg6 from "../assets/images/bg6.jpg";
 import nav from "../assets/images/nav.png";
 import nav2 from "../assets/images/nav2.png";
-import i18n from "../i18n";  // Import your i18n instance
+import i18n from "../i18n"; // Import your i18n instance
 
-const Hero = ({ setMenuOpen }) => {
+const Hero = () => {
   const { t } = useTranslation();
   const [color, setColor] = useState(false);
   const [paddingTop, setPaddingTop] = useState('');
+  const [activeIndex, setActiveIndex] = useState(0); // Track active slide index
 
-  // Detect RTL or LTR , away refresh krd swiper image kan pshan bat bo ar,ku
+  // Detect RTL or LTR
   const isRTL = i18n.language === 'ar' || i18n.language === 'ku';
 
   const changeHeaderColor = () => {
@@ -39,36 +42,74 @@ const Hero = ({ setMenuOpen }) => {
     };
   }, []);
 
-  const renderSlide = (backgroundImage, heading, subheading) => (
-    <SwiperSlide className="swiper-slide">
+  // Function to handle slide change
+  const handleSlideChange = (swiper) => {
+    setActiveIndex(swiper.activeIndex); // Update active slide index
+  };
+
+  // Function to scroll to the about section
+  const scrollToAbout = () => {
+    scroller.scrollTo("about", {
+      duration: 800,
+      delay: 0,
+      smooth: "easeInOutQuart",
+    });
+  };
+  // Function to scroll to the about section
+  const scrollToDeleviry = () => {
+    scroller.scrollTo("contacts", {
+      duration: 800,
+      delay: 0,
+      smooth: "easeInOutQuart",
+    });
+  };
+
+  const renderSlide = (backgroundImage, heading, subheading, index) => (
+    <SwiperSlide key={index} className="swiper-slide  ">
       <div className="kf-started-item relative h-screen flex items-center justify-start">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${backgroundImage})` }}
         />
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="absolute inset-0 bg-black opacity-50 "></div>
         <div className="container mx-auto px-4 relative z-10 text-white mb-32 max-w-[1300px]">
           <div className="description px-5">
-            <div className="subtitles text-sm md:text-lg font-semibold text-gray-300 mb-4 tracking-wider uppercase">
+            {/* Motion for subtitles using framer-motion */}
+            <motion.div
+              key={`subtitles-${activeIndex}`} // Key to replay animation when slide changes
+              initial={{ x: -100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              className="subtitles text-sm md:text-lg font-semibold text-gray-300 mb-4 tracking-wider uppercase "
+            >
               ---- {t("welcome")}
-            </div>
-            <h2 className="name md:text-7xl lg:text-9xl text-5xl font-bebas mb-6 leading-tight">
+            </motion.div>
+
+            {/* Motion for main heading using framer-motion */}
+            <motion.h2
+              key={`heading-${activeIndex}`} // Key to replay animation when slide changes
+              initial={{ x: -200, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="name md:text-7xl lg:text-9xl text-5xl font-bebas mb-6 leading-tight "
+            >
               {t(heading)} <br />
               {t(subheading)}
-            </h2>
-            <div className="kf-bts space-x-4 px-3">
-              <Link
-                to="/"
-                className="kf-btn bg-[#b89272] text-white text-sm px-3 py-2 md:px-7 md:py-3 rounded inline-flex items-center md:text-lg font-semibold"
+            </motion.h2>
+
+            <div className="kf-bts flex gap-3 px-3 whitespace-nowrap">
+              <button
+                onClick={scrollToAbout}
+                className="kf-btn bg-[#b89272]  text-white text-sm px-3 py-2 md:px-7 md:py-3 rounded inline-flex items-center md:text-lg font-semibold"
               >
                 <span>{t("explore_more")}</span>
-              </Link>
-              <Link
-                to="/"
-                className="kf-btn bg-gray-900 text-white text-sm px-3 py-2 md:px-7 md:py-3 rounded inline-flex items-center md:text-lg font-semibold"
+              </button>
+              <button
+               onClick={scrollToDeleviry}
+                className="kf-btn bg-gray-900  text-white text-sm px-3 py-2 md:px-7 md:py-3 rounded inline-flex items-center md:text-lg font-semibold"
               >
                 <span>{t("get_delivery")}</span>
-              </Link>
+              </button>
             </div>
           </div>
         </div>
@@ -77,14 +118,10 @@ const Hero = ({ setMenuOpen }) => {
   );
 
   return (
-    <section
-      name="hero"
-      onMouseOut={() => setMenuOpen(false)}
-      className="section kf-started-slider"
-    >
+    <section name="hero" className="section  kf-started-slider">
       <Swiper
         key={i18n.language} // Re-initialize Swiper when language changes
-        className={`swiper-container transition-all h-screen lg:h-[795px] duration-200 ease-in-out ${
+        className={`swiper-container transition-all h-screen lg:h-[720px] duration-200 ease-in-out ${
           color
             ? `${paddingTop} transition-all duration-1000`
             : 'transition-all duration-1000'
@@ -92,18 +129,18 @@ const Hero = ({ setMenuOpen }) => {
         modules={[Navigation, Autoplay]}
         loop={true}
         autoplay={{ delay: 5000 }}
+        onSlideChange={handleSlideChange} // Handle slide change
         navigation={{
           nextEl: ".custom-swiper-button-next",
           prevEl: ".custom-swiper-button-prev",
         }}
-        // Enable RTL mode when the language is Arabic or Kurdish, katek refresh bkai swiperka dw bara image kan pshan aya agar ama nkai la katy gorni bo ar,ku swiper image pshan nada
-        dir={isRTL ? 'rtl' : 'ltr'} // This ensures Swiper works in RTL mode
+        dir={isRTL ? 'rtl' : 'ltr'}
       >
-        {renderSlide(bg2, "slide1_heading", "slide1_subheading")}
-        {renderSlide(bg1, "slide2_heading", "slide2_subheading")}
-        {renderSlide(bg3, "slide3_heading", "slide3_subheading")}
-        {renderSlide(bg4, "slide4_heading", "slide4_subheading")}
-        {renderSlide(bg6, "slide5_heading", "slide5_subheading")}
+        {renderSlide(bg2, "slide1_heading", "slide1_subheading", 0)}
+        {renderSlide(bg1, "slide2_heading", "slide2_subheading", 1)}
+        {renderSlide(bg3, "slide3_heading", "slide3_subheading", 2)}
+        {renderSlide(bg4, "slide4_heading", "slide4_subheading", 3)}
+        {renderSlide(bg6, "slide5_heading", "slide5_subheading", 4)}
 
         <div className="custom-swiper-button-prev absolute top-[45%] transform -translate-y-1/2 left-0 z-20">
           <img
