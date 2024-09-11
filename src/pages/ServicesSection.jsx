@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import services_vide from "../assets/images/services-vide.MP4";
+import services_vide from "../assets/images/services-vide.mp4";
 import Services from "../pages/Services";
 import { useTranslation } from "react-i18next";
 
