@@ -17,7 +17,7 @@ const MenuItem = ({ imgSrc, altText, title, description, price }) => {
       {/* Text Section */}
       <div className="flex-1">
         {/* Ensure the title text wraps */}
-        <h5 className="text-xl font-semibold text-white break-words">{title}</h5>
+        <h5 className="text-xl font-semibold text-white ">{title}</h5>
 
         {/* Allow description to wrap naturally */}
         <div className="text-gray-400 py-4">{description}</div>
