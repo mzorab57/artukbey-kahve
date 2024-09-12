@@ -6,7 +6,7 @@ const Statistics = () => {
   const { t } = useTranslation(); // Use translation hook
 
   return (
-    <section className="py-12 text-white">
+    <section className="py-12 bg-gray-500/20 text-white">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap gap-10 lg:justify-around items-center">
           <NumberItem

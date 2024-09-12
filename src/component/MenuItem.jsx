@@ -4,12 +4,13 @@ const MenuItem = ({ imgSrc, altText, title, description, price }) => {
   return (
     <div className="flex  w-full gap-x-8 items-center">
       {/* Image Section */}
-      <div className="w-28 md:w-40 md:h-44 h-32 overflow-hidden rounded-lg">
+      <div className="w-28 md:w-32 md:h-36 h-32 overflow-hidden rounded-lg">
        
           <img
             src={imgSrc}
             alt={altText}
-            className="w-full h-full object-cover transition-transform transform hover:scale-110 duration-700"
+            loading="lazy"
+            className="w-full h-full  object-cover transition-transform transform hover:scale-110 duration-700"
           />
        
       </div>

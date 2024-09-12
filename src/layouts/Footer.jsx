@@ -1,27 +1,28 @@
-import React from 'react';
+import React from "react";
 // import chooseImage from '../assets/images/barista-making-cup-coffee.jpg';
-import logo from '../assets/images/artukbey-logo.jpg';
-import g2 from '../assets/images/cake3.jpg';
-import g3 from '../assets/images/carousel1.jpg';
-import g4 from '../assets/images/fjbm.jpg';
-import g5 from '../assets/images/smoothi3.jpg';
-import g6 from '../assets/images/sweet.jpg';
-import g7 from '../assets/images/mocktail1.jpg';
-import { useTranslation } from 'react-i18next';
+import logo from "../assets/images/artukbey-logo.jpg";
+import g2 from "../assets/images/cake3.jpg";
+import g3 from "../assets/images/carousel1.jpg";
+import g4 from "../assets/images/fjbm.jpg";
+import g5 from "../assets/images/smoothi3.jpg";
+import g6 from "../assets/images/sweet.jpg";
+import g7 from "../assets/images/mocktail1.jpg";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer name="contacts" className="bg-black text-white py-12">
+    <footer name="contacts" className=" text-white py-12">
       <div className="container mx-auto px-4 max-w-[1400px]">
         <div className="flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0 md:space-x-8">
-          
           {/* Logo Section */}
           <div className="md:w-1/4">
             <div className="flex items-center space-x-2">
               <div className="flex flex-col space-y-5">
-                <span className="text-2xl font-semibold text-primary">Artukbey Kahve</span>
+                <span className="text-2xl font-semibold text-primary">
+                  Artukbey Kahve
+                </span>
                 <img src={logo} alt="logo" className="size-40" />
               </div>
             </div>
@@ -65,7 +66,7 @@ const Footer = () => {
           <div className="md:w-1/4">
             <h5 className="text-xl font-semibold mb-4">{t("gallery")}</h5>
             <div className="grid grid-cols-3 gap-2">
-              {[g2,g3,g4,g5,g6,g7].map((image, index) => (
+              {[g2, g3, g4, g5, g6, g7].map((image, index) => (
                 <img
                   key={index}
                   src={image}

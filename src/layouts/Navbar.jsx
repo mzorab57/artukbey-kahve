@@ -129,7 +129,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
             <img
               src={artukbey_logo}
               alt="artkbey Logo"
-              className="h-12 w-auto"
+              className="size-16"
             />
           </a>
         </div>

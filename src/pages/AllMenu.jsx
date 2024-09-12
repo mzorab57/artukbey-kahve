@@ -35,6 +35,7 @@ const AllMenu = ({ setMenuOpen }) => {
         <img
           src={menuBg}
           alt="menu"
+          loading="lazy"
           className="absolute inset-0 w-full h-full object-cover opacity-70"
         />
         <div className="relative z-10 text-white md:text-center max-w-[700px] p-4 md:p-10">

@@ -7,7 +7,7 @@ const About = () => {
   const { t } = useTranslation(); // Destructure the translation function
 
   return (
-    <section name="about" className="bg-black py-12">
+    <section name="about" className=" py-12">
       <div className="container max-w-[1380px] mx-auto px-4 flex flex-wrap justify-between items-center">
         {/* Text Section */}
         <div className="w-full lg:w-1/2 text-white">
@@ -26,6 +26,7 @@ const About = () => {
             <img
               src={artukbey_logo}
               alt="quote"
+              loading="lazy"
               className="w-16 h-16 rounded-full mr-4"
             />
             <div className="text-white italic">
@@ -42,11 +43,7 @@ const About = () => {
               alt="about"
               className="max-w-full h-auto rounded-lg shadow-lg"
             />
-            <img
-              src="/images/background-flower.png"
-              alt="background decoration"
-              className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
-            />
+           
           </div>
         </div>
       </div>

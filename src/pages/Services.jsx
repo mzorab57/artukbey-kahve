@@ -11,7 +11,7 @@ import { GiWrappedSweet, GiFruitBowl } from "react-icons/gi";
 
 import coffee from "../assets/images/cup-coffee-with-word-coffee-it.jpg";
 import coldDrinks from "../assets/images/drikCold.jpg";
-import cake from "../assets/images/cake1.jpg";
+import cake from "../assets/images/cak1.jpg";
 import charas from "../assets/images/nut.jpg";
 import sweet from "../assets/images/sweet.jpg";
 import fruit from "../assets/images/fruit.jpg";
@@ -28,7 +28,11 @@ const Services = () => {
   };
 
   return (
-    <section className={`services ${path === "/" ? 'bg-black' : 'py-12 bg-gray-950/70'}`}>
+    <section
+      className={`services ${
+        path === "/" ? "" : "py-12 "
+      }`}
+    >
       <div className="container mx-auto px-4 max-w-[1300px]">
         {path !== "/" && (
           <div className="block  text-center my-5">
@@ -42,42 +46,54 @@ const Services = () => {
           <ServiceItem
             imgSrc={coffee}
             altText="Cofe Menu"
-            icon={<PiCoffee className="text-orange-100 text-opacity-60 group-hover:text-opacity-100 group-hover:text-orange-200" />}
+            icon={
+              <PiCoffee className="text-orange-100 text-opacity-60 group-hover:text-opacity-100 group-hover:text-orange-200" />
+            }
             title={t("hot_drinks")} // Translated title
             onClick={() => handleServiceClick("hot-drinks")} // Navigate to Menu component with category
           />
           <ServiceItem
             imgSrc={coldDrinks}
             altText="Cold Menu"
-            icon={<BiDrink className="text-orange-100 text-opacity-60 group-hover:text-opacity-100 group-hover:text-orange-200" />}
+            icon={
+              <BiDrink className="text-orange-100 text-opacity-60 group-hover:text-opacity-100 group-hover:text-orange-200" />
+            }
             title={t("cold_drinks")} // Translated title
             onClick={() => handleServiceClick("cold-drinks")}
           />
           <ServiceItem
             imgSrc={cake}
             altText="Cake Menu"
-            icon={<LuCakeSlice className="text-orange-100 text-opacity-80 group-hover:text-opacity-100 group-hover:text-orange-200" />}
+            icon={
+              <LuCakeSlice className="text-orange-100 text-opacity-80 group-hover:text-opacity-100 group-hover:text-orange-200" />
+            }
             title={t("cake_menu")} // Translated title
             onClick={() => handleServiceClick("cakes")}
           />
           <ServiceItem
             imgSrc={charas}
             altText="Charas Menu"
-            icon={<FaBowlFood className="text-orange-100 text-opacity-80 group-hover:text-opacity-100 group-hover:text-orange-200" />}
+            icon={
+              <FaBowlFood className="text-orange-100 text-opacity-80 group-hover:text-opacity-100 group-hover:text-orange-200" />
+            }
             title={t("nut_menu")} // Translated title
             onClick={() => handleServiceClick("nuts")}
           />
           <ServiceItem
             imgSrc={sweet}
             altText="Sweet Menu"
-            icon={<GiWrappedSweet className="text-orange-100 text-opacity-80 group-hover:text-opacity-100 group-hover:text-orange-200" />}
+            icon={
+              <GiWrappedSweet className="text-orange-100 text-opacity-80 group-hover:text-opacity-100 group-hover:text-orange-200" />
+            }
             title={t("sweet_menu")} // Translated title
             onClick={() => handleServiceClick("sweets")}
           />
           <ServiceItem
             imgSrc={fruit}
             altText="Fruit Menu"
-            icon={<GiFruitBowl className="text-orange-100 text-opacity-80 group-hover:text-opacity-100 group-hover:text-orange-200" />}
+            icon={
+              <GiFruitBowl className="text-orange-100 text-opacity-80 group-hover:text-opacity-100 group-hover:text-orange-200" />
+            }
             title={t("fruit_menu")} // Translated title
             onClick={() => handleServiceClick("fruits")}
           />
