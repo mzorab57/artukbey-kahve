@@ -12,6 +12,7 @@ import Booking from "../pages/Booking";
 import FeedBack from "../pages/FeedBack";
 import ServicesSection from "../pages/ServicesSection";
 import AllMenu from "../pages/AllMenu";
+import ModelViewer from "../component/ModelViewer";
 
 const AppRoutes = ({ setMenuOpen }) => {
   return (
@@ -24,6 +25,7 @@ const AppRoutes = ({ setMenuOpen }) => {
           element={
             <>
               <Hero />
+              {/* <ModelViewer /> */}
               <About />
               <Services />
               <Menu />
