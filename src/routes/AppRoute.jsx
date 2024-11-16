@@ -12,12 +12,11 @@ import Booking from "../pages/Booking";
 import FeedBack from "../pages/FeedBack";
 import ServicesSection from "../pages/ServicesSection";
 import AllMenu from "../pages/AllMenu";
-import ModelViewer from "../component/ModelViewer";
 
 const AppRoutes = ({ setMenuOpen }) => {
   return (
     // aw set show service bo awaia katek mouse lasar page lachu la har shwenek bet colse aw hover bkat
-    <div onMouseOut={()=> setMenuOpen(false)}>
+    <div onMouseOut={() => setMenuOpen(false)}>
       <Routes>
         <Route
           index

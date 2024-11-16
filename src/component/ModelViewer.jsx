@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useTexture } from "@react-three/drei";
-import d from "../assets/images/f.png";
+import d from "/assets/images/f.png";
 const ThreeDImage = () => {
   const texture = useTexture(d); // Load the PNG image as a texture
 

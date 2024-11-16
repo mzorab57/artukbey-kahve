@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { scroller } from "react-scroll";
-import artukbey_logo from "../assets/images/artukbey-logo.jpg";
+import artukbey_logo from "/assets/images/artukbey-logo.jpg";
 import MobileMenu from "./MobileMenu";
 import { FaFacebookF } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";

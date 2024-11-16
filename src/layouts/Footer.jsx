@@ -1,12 +1,11 @@
 import React from "react";
-// import chooseImage from '../assets/images/barista-making-cup-coffee.jpg';
-import logo from "../assets/images/artukbey-logo.jpg";
-import g2 from "../assets/images/cake3.jpg";
-import g3 from "../assets/images/carousel1.jpg";
-import g4 from "../assets/images/fjbm.jpg";
-import g5 from "../assets/images/smoothi3.jpg";
-import g6 from "../assets/images/sweet.jpg";
-import g7 from "../assets/images/mocktail1.jpg";
+import logo from "/assets/images/artukbey-logo.jpg";
+import g2 from "/assets/images/cake3.jpg";
+import g3 from "/assets/images/carousel1.jpg";
+import g4 from "/assets/images/fjbm.jpg";
+import g5 from "/assets/images/smoothi3.jpg";
+import g6 from "/assets/images/sweet.jpg";
+import g7 from "/assets/images/mocktail1.jpg";
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {

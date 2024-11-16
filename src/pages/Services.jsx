@@ -9,12 +9,12 @@ import { LuCakeSlice } from "react-icons/lu";
 import { FaBowlFood } from "react-icons/fa6";
 import { GiWrappedSweet, GiFruitBowl } from "react-icons/gi";
 
-import coffee from "../assets/images/cup-coffee-with-word-coffee-it.jpg";
-import coldDrinks from "../assets/images/drikCold.jpg";
-import cake from "../assets/images/cak1.jpg";
-import charas from "../assets/images/nut.jpg";
-import sweet from "../assets/images/sweet.jpg";
-import fruit from "../assets/images/fruit.jpg";
+import coffee from "/assets/images/cup-coffee-with-word-coffee-it.jpg";
+import coldDrinks from "/assets/images/drikCold.jpg";
+import cake from "/assets/images/cak1.jpg";
+import charas from "/assets/images/nut.jpg";
+import sweet from "/assets/images/sweet.jpg";
+import fruit from "/assets/images/fruit.jpg";
 
 const Services = () => {
   const location = useLocation();

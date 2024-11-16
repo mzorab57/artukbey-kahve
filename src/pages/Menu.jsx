@@ -1,106 +1,93 @@
-import hotDrink from "../assets/images/coffeeArtuk.jpg";
-import coldDrinkAllMenu from "../assets/images/coldDrinkAllMenu.jpg";
-import tralichaAllMenu from "../assets/images/tralichaAllMenu.jpg";
-import bademAllMenu from "../assets/images/bademAllMenu.jpg";
-import chocolate from "../assets/images/chooclate.jpg";
+import hotDrink from "/assets/images/coffeeArtuk.jpg";
+import coldDrinkAllMenu from "/assets/images/coldDrinkAllMenu.jpg";
+import tralichaAllMenu from "/assets/images/tralichaAllMenu.jpg";
+import bademAllMenu from "/assets/images/bademAllMenu.jpg";
+import chocolate from "/assets/images/chooclate.jpg";
 
-import artukbey_turk_kahvesi_100gr from "../assets/images/artukbey-turk-kahvesi-100gr.jpg";
-import special_kahve_100gr from "../assets/images/special-kahve-100gr.jpeg";
-import artukbey_damla_sakizli_turk_kahvesi_100gr from "../assets/images/artukbey_damla_sakizli_turk_kahvesi_100gr.jpg";
-import menengic_coffee_dibek_100gr from "../assets/images/menengic_coffee_dibek_100gr.webp";
-import dibek_coffee_artukbey_turkish_coffee_400g from "../assets/images/dibek_coffee_artukbey_turkish_coffee_400g.webp";
-import artukbey_special_damla_sakizli_dibek from "../assets/images/artukbey_special_damla_sakizli_dibek.jpg";
-import artukbeydibek_7_kahve_3_bitki_special from "../assets/images/artukbey_dibek_7_kahve_3_bitki_special.jpg";
-import damlasakizli_turk_kahvesi_teneke_kutu from "../assets/images/damlasakizli_turk_kahvesi_teneke_kutu.jpg";
-import special_damlasakizli_dibek_kahvesi_ten from "../assets/images/special_damlasakizli_dibek_kahvesi_ten.jpg";
-import artukbey_suryani_dibek_kahvesi_400gr from "../assets/images/artukbey_suryani_dibek_kahvesi_400gr.jpg";
-import special_damla_sakizli_dibek_kahvesi_300gr from "../assets/images/special_damla_sakizli_dibek_kahvesi_300gr.jpg";
-import artukbey_menengic_kahvesi_300gr from "../assets/images/artukbey_menengic_kahvesi_300gr.jpg";
-import artukbey_antep_fistikli_dibek_kahvesi from "../assets/images/artukbey_antep_fistikli_dibek_kahvesi.jpg";
-import Artukbey_Sade_Dibek_Turk_Coffee_300gr from "../assets/images/Artukbey_Sade_Dibek_Turk_Coffee_300gr.jpg";
-import Special_Dibek_Kahvesi_300gr from "../assets/images/Special_Dibek_Kahvesi_300gr.jpg";
-import Bitter_Cikolatali_Dibek_Coffee_400gr from "../assets/images/Bitter_Cikolatali_Dibek_Coffee_400gr.jpg";
-import Artukbey_Damla_Sakizli_Turk_Coffee_400gr from "../assets/images/Artukbey_Damla_Sakizli_Turk_Coffee_400gr.jpg";
-import Artukbey_Findikli_Dibek_Coffee_300gr from "../assets/images/Artukbey_Findikli_Dibek_Coffee_300gr.jpg";
-import Srtukbey_Kakuleli_Dibek_Coffee_400gr from "../assets/images/Srtukbey_Kakuleli_Dibek_Coffee_400gr.jpg";
-import Artukbey_7_Si_1_Arada_Dibek_Coffee_300gr from "../assets/images/Artukbey_7_Si_1_Arada_Dibek_Coffee_300gr.jpg";
-import Artukbey_Sade_Dibek_Turkish_Coffee_Kese from "../assets/images/Artukbey_Sade_Dibek_Turkish_Coffee_Kese.jpg";
-import Special_Dibek_Coffee_Kese_100gr from "../assets/images/Special_Dibek_Coffee_Kese_100gr.jpg";
-import Artukbey_Kakuleli_Dibek_Coffee_Kese from "../assets/images/Artukbey_Kakuleli_Dibek_Coffee_Kese.jpg";
-import Artukbey_Menengic_Coffee_kese_200gr from "../assets/images/Artukbey_Menengic_Coffee_kese_200gr.jpg";
-import Artukbey_Suryani_Dibek_Coffee_Kese_200gr from "../assets/images/Artukbey_Suryani_Dibek_Coffee_Kese_200gr.jpg";
-import Artukbey_Damla_Sakizli_Dibek_Coffee_100gr from "../assets/images/Artukbey_Damla_Sakizli_Dibek_Coffee_100gr.jpg";
-import Artukbey_Kayisili_Dibek_Coffee_Kese_200gr from "../assets/images/Artukbey_Kayisili_Dibek_Coffee_Kese_200gr.jpg";
-import Special_Damla_Sakizli_Dibek_Kese_100gr from "../assets/images/Special_Damla_Sakizli_Dibek_Kese_100gr.jpg";
-import Espresso_Coffee_Cekirdegi_1kg from "../assets/images/Espresso_Coffee_Cekirdegi_1kg.jpg";
+import artukbey_turk_kahvesi_100gr from "/assets/images/artukbey-turk-kahvesi-100gr.jpg";
+import special_kahve_100gr from "/assets/images/special-kahve-100gr.jpeg";
+import artukbey_damla_sakizli_turk_kahvesi_100gr from "/assets/images/artukbey_damla_sakizli_turk_kahvesi_100gr.jpg";
+import menengic_coffee_dibek_100gr from "/assets/images/menengic_coffee_dibek_100gr.webp";
+import dibek_coffee_artukbey_turkish_coffee_400g from "/assets/images/dibek_coffee_artukbey_turkish_coffee_400g.webp";
+import artukbey_special_damla_sakizli_dibek from "/assets/images/artukbey_special_damla_sakizli_dibek.jpg";
+import artukbeydibek_7_kahve_3_bitki_special from "/assets/images/artukbey_dibek_7_kahve_3_bitki_special.jpg";
+import damlasakizli_turk_kahvesi_teneke_kutu from "/assets/images/damlasakizli_turk_kahvesi_teneke_kutu.jpg";
+import special_damlasakizli_dibek_kahvesi_ten from "/assets/images/special_damlasakizli_dibek_kahvesi_ten.jpg";
+import artukbey_suryani_dibek_kahvesi_400gr from "/assets/images/artukbey_suryani_dibek_kahvesi_400gr.jpg";
+import special_damla_sakizli_dibek_kahvesi_300gr from "/assets/images/special_damla_sakizli_dibek_kahvesi_300gr.jpg";
+import artukbey_menengic_kahvesi_300gr from "/assets/images/artukbey_menengic_kahvesi_300gr.jpg";
+import artukbey_antep_fistikli_dibek_kahvesi from "/assets/images/artukbey_antep_fistikli_dibek_kahvesi.jpg";
+import Artukbey_Sade_Dibek_Turk_Coffee_300gr from "/assets/images/Artukbey_Sade_Dibek_Turk_Coffee_300gr.jpg";
+import Special_Dibek_Kahvesi_300gr from "/assets/images/Special_Dibek_Kahvesi_300gr.jpg";
+import Bitter_Cikolatali_Dibek_Coffee_400gr from "/assets/images/Bitter_Cikolatali_Dibek_Coffee_400gr.jpg";
+import Artukbey_Damla_Sakizli_Turk_Coffee_400gr from "/assets/images/Artukbey_Damla_Sakizli_Turk_Coffee_400gr.jpg";
+import Artukbey_Findikli_Dibek_Coffee_300gr from "/assets/images/Artukbey_Findikli_Dibek_Coffee_300gr.jpg";
+import Srtukbey_Kakuleli_Dibek_Coffee_400gr from "/assets/images/Srtukbey_Kakuleli_Dibek_Coffee_400gr.jpg";
+import Artukbey_7_Si_1_Arada_Dibek_Coffee_300gr from "/assets/images/Artukbey_7_Si_1_Arada_Dibek_Coffee_300gr.jpg";
+import Artukbey_Sade_Dibek_Turkish_Coffee_Kese from "/assets/images/Artukbey_Sade_Dibek_Turkish_Coffee_Kese.jpg";
+import Special_Dibek_Coffee_Kese_100gr from "/assets/images/Special_Dibek_Coffee_Kese_100gr.jpg";
+import Artukbey_Kakuleli_Dibek_Coffee_Kese from "/assets/images/Artukbey_Kakuleli_Dibek_Coffee_Kese.jpg";
+import Artukbey_Menengic_Coffee_kese_200gr from "/assets/images/Artukbey_Menengic_Coffee_kese_200gr.jpg";
+import Artukbey_Suryani_Dibek_Coffee_Kese_200gr from "/assets/images/Artukbey_Suryani_Dibek_Coffee_Kese_200gr.jpg";
+import Artukbey_Damla_Sakizli_Dibek_Coffee_100gr from "/assets/images/Artukbey_Damla_Sakizli_Dibek_Coffee_100gr.jpg";
+import Artukbey_Kayisili_Dibek_Coffee_Kese_200gr from "/assets/images/Artukbey_Kayisili_Dibek_Coffee_Kese_200gr.jpg";
+import Special_Damla_Sakizli_Dibek_Kese_100gr from "/assets/images/Special_Damla_Sakizli_Dibek_Kese_100gr.jpg";
+import Espresso_Coffee_Cekirdegi_1kg from "/assets/images/Espresso_Coffee_Cekirdegi_1kg.jpg";
 // PICES COFFEE
-import Artukbey_Filtre_Coffee_1_kg from "../assets/images/Artukbey_Filtre_Coffee_1_kg.jpg";
-import Classic_Filtre_Coffee_250gr from "../assets/images/Classic_Filtre_Coffee_250gr.jpg";
-import Costa_Rica_Filtre_Coffee_250gr from "../assets/images/Costa_Rica_Filtre_Coffee_250gr.jpg";
-import Kenya_Filtre_Coffee_Cekirdegi_250gr from "../assets/images/Kenya_Filtre_Coffee_Cekirdegi_250gr.jpg";
-import Ethiopia_Filtre_Coffee_Cekirdegi_250gr from "../assets/images/Ethiopia_Filtre_Coffee_Cekirdegi_250gr.jpg";
-import Columbia_Filtre_Cpffee_250gr from "../assets/images/Columbia_Filtre_Cpffee_250gr.jpg";
-import Blend_Filtre_Coffee_250gr from "../assets/images/Blend_Filtre_Coffee_250gr.jpg";
-import Guatemala_Filtre_Coffee_Cekirdegi_250gr from "../assets/images/Guatemala_Filtre_Coffee_Cekirdegi_250gr.jpg";
+import Artukbey_Filtre_Coffee_1_kg from "/assets/images/Artukbey_Filtre_Coffee_1_kg.jpg";
+import Classic_Filtre_Coffee_250gr from "/assets/images/Classic_Filtre_Coffee_250gr.jpg";
+import Costa_Rica_Filtre_Coffee_250gr from "/assets/images/Costa_Rica_Filtre_Coffee_250gr.jpg";
+import Kenya_Filtre_Coffee_Cekirdegi_250gr from "/assets/images/Kenya_Filtre_Coffee_Cekirdegi_250gr.jpg";
+import Ethiopia_Filtre_Coffee_Cekirdegi_250gr from "/assets/images/Ethiopia_Filtre_Coffee_Cekirdegi_250gr.jpg";
+import Columbia_Filtre_Cpffee_250gr from "/assets/images/Columbia_Filtre_Cpffee_250gr.jpg";
+import Blend_Filtre_Coffee_250gr from "/assets/images/Blend_Filtre_Coffee_250gr.jpg";
+import Guatemala_Filtre_Coffee_Cekirdegi_250gr from "/assets/images/Guatemala_Filtre_Coffee_Cekirdegi_250gr.jpg";
 // TAKEAWAY COFFEE
-//3u_1_Arada_Klasik_48_Adet_18gr 3 in 1 Classic (48 pieces * 18gr)
-// import u_1_Arada_Klasik_48_Adet_18gr from "../assets/images/3u_1_Arada_Klasik_48_Adet_18gr.jpg";
-// import u_1_Arada_Fistikli_48_Adet18gr from "../assets/images/3u_1_Arada_Fistikli_48_Adet18gr.jpg";
-// import u_1_Arada_Findikli_48_Adet18gr from "../assets/images/3u_1_Arada_Findikli_48_Adet18gr.jpg";
-// import u_1_Srada_Extra_Coffee_48_Adet18gr from "../assets/images/3u_1_Srada_Extra_Coffee_48_Adet18gr.jpg";
-import Clasic_Coffee_50_Adet2gr from "../assets/images/Clasic_Coffee_50_Adet2gr.jpg";
-import si_1_Arada_Special_Dibek_Coffee_48_Ade_18gr from "../assets/images/7si_1_Arada_Special_Dibek_Coffee_48_Ade_18gr.jpg";
-import si_1_Arada_Sekersiz_48_adet12gr from "../assets/images/2si_1_Arada_Sekersiz_48_adet12gr.jpg";
-import Gold_Coffee_50_adet2gr from "../assets/images/Gold_Coffee_50_adet2gr.jpg";
-import Hazirset_Sicak_Cikolata_40_adet25gr from "../assets/images/Hazirset_Sicak_Cikolata_40_adet25gr.jpg";
-import Sade_Turkish_Coffee_Hazir_Set from "../assets/images/Sade_Turkish_Coffee_Hazir_Set.jpg";
-import Special_Menengic_Coffee_Hazir_Set from "../assets/images/Special_Menengic_Coffee_Hazir_Set.jpg";
-import Special_Damla_Sakizli_Dibek_Coffee from "../assets/images/Special_Damla_Sakizli_Dibek_Coffee.jpg";
+import Clasic_Coffee_50_Adet2gr from "/assets/images/Clasic_Coffee_50_Adet2gr.jpg";
+import si_1_Arada_Special_Dibek_Coffee_48_Ade_18gr from "/assets/images/7si_1_Arada_Special_Dibek_Coffee_48_Ade_18gr.jpg";
+import si_1_Arada_Sekersiz_48_adet12gr from "/assets/images/2si_1_Arada_Sekersiz_48_adet12gr.jpg";
+import Gold_Coffee_50_adet2gr from "/assets/images/Gold_Coffee_50_adet2gr.jpg";
+import Hazirset_Sicak_Cikolata_40_adet25gr from "/assets/images/Hazirset_Sicak_Cikolata_40_adet25gr.jpg";
+import Sade_Turkish_Coffee_Hazir_Set from "/assets/images/Sade_Turkish_Coffee_Hazir_Set.jpg";
+import Special_Menengic_Coffee_Hazir_Set from "/assets/images/Special_Menengic_Coffee_Hazir_Set.jpg";
+import Special_Damla_Sakizli_Dibek_Coffee from "/assets/images/Special_Damla_Sakizli_Dibek_Coffee.jpg";
 
 // COLD DRINK ICE CREAM
-import ice1 from "../assets/images/ice1.jpg";
-import ice2 from "../assets/images/ice2.jpg";
-import ice3 from "../assets/images/ice3.jpg";
+import ice1 from "/assets/images/ice1.jpg";
+import ice2 from "/assets/images/ice2.jpg";
+import ice3 from "/assets/images/ice3.jpg";
 
 // FRUIT
-import fruit1 from "../assets/images/fruit1.jpg";
-import fruit from "../assets/images/fruit.jpg";
-// import fwshk from "../assets/images/fwshk.jpg";
+import fruit1 from "/assets/images/fruit1.jpg";
+import fruit from "/assets/images/fruit.jpg";
+
 
 // FRUIT JUICE
-import fjpl from "../assets/images/fjpl.jpg";
-import fjbm from "../assets/images/fjbm.jpg";
-import fjo from "../assets/images/fjo.jpg";
-import fjk from "../assets/images/fjk.jpg";
-import fjkiwi from "../assets/images/fjkiwi.jpg";
-// import fjp from "../assets/images/fjp.webp";
-import fjapp from "../assets/images/fjapp.jpg";
-import fjg from "../assets/images/fjg.jpg";
-// import fjs from "../assets/images/fjs.jpg";
-import fjh from "../assets/images/fjh.jpg";
+import fjpl from "/assets/images/fjpl.jpg";
+import fjbm from "/assets/images/fjbm.jpg";
+import fjo from "/assets/images/fjo.jpg";
+import fjk from "/assets/images/fjk.jpg";
+import fjkiwi from "/assets/images/fjkiwi.jpg";
+import fjapp from "/assets/images/fjapp.jpg";
+import fjg from "/assets/images/fjg.jpg";
+import fjh from "/assets/images/fjh.jpg";
 
-// MOCKTAIL
-// import mocktail1 from "../assets/images/mocktail1.jpg";
-import mocktail2 from "../assets/images/mocktail2.jpg";
-// import mocktail3 from "../assets/images/mocktail3.jpg";
-// import mocktail4 from "../assets/images/mocktail4.jpg";
-import mocktail5 from "../assets/images/mocktail5.jpg";
-// import mocktail6 from "../assets/images/mocktail6.jpg";
-import mocktail7 from "../assets/images/mocktail7.jpg";
-// import mocktail8 from "../assets/images/mocktail8.jpg";
-import mocktail9 from "../assets/images/mocktail9.jpg";
-import mocktail10 from "../assets/images/mocktail10.jpg";
+// MOCKTA
+import mocktail2 from "/assets/images/mocktail2.jpg";
+import mocktail5 from "/assets/images/mocktail5.jpg";
+import mocktail7 from "/assets/images/mocktail7.jpg";
+import mocktail9 from "/assets/images/mocktail9.jpg";
+import mocktail10 from "/assets/images/mocktail10.jpg";
 // smoothie
-import smoothi1 from "../assets/images/smoothi1.jpg";
-import smoothi2 from "../assets/images/smoothi2.jpg";
-import smoothi3 from "../assets/images/smoothi3.jpg";
-import smoothi4 from "../assets/images/smoothi4.jpg";
-import smoothi5 from "../assets/images/smoothi5.jpg";
-import smoothi6 from "../assets/images/smoothi6.jpg";
+import smoothi1 from "/assets/images/smoothi1.jpg";
+import smoothi2 from "/assets/images/smoothi2.jpg";
+import smoothi3 from "/assets/images/smoothi3.jpg";
+import smoothi4 from "/assets/images/smoothi4.jpg";
+import smoothi5 from "/assets/images/smoothi5.jpg";
+import smoothi6 from "/assets/images/smoothi6.jpg";
 // cake
-import cake1 from "../assets/images/cak1.jpg";
-import cake2 from "../assets/images/cake2.jpg";
-// import cake3 from "../assets/images/cake3.jpg";
+import cake1 from "/assets/images/cak1.jpg";
+import cake2 from "/assets/images/cake2.jpg";
 
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
@@ -108,11 +95,8 @@ import { useTranslation } from "react-i18next"; // Import useTranslation hook
 import MenuItem from "../component/MenuItem";
 import CategoryFilter from "../component/CategoryFilter ";
 
-import category_bg from "../assets/images/category_bg.jpg";
-import menu_logo from "../assets/images/menu_logo.png";
-
-// data
-// import { allMenuItems } from "../data/data";
+import category_bg from "/assets/images/category_bg.jpg";
+import menu_logo from "/assets/images/menu_logo.png";
 
 const Menu = () => {
   const { t } = useTranslation(); // Destructure the translation function

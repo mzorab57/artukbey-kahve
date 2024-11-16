@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import services_vide from "../assets/images/services-vide.mp4";
+import services_vide from "/assets/videos/services-vide.mp4";
 import Services from "../pages/Services";
 import { useTranslation } from "react-i18next";
 
@@ -22,11 +22,15 @@ const ServicesSection = () => {
   return (
     <section
       className={`text-white ${
-        color ? `${p} transition-all duration-1000 ease-in-out` : "transition-all duration-1000 ease-in-out"
+        color
+          ? `${p} transition-all duration-1000 ease-in-out`
+          : "transition-all duration-1000 ease-in-out"
       }`}
     >
       {/* Hero Section */}
-      <div className={`relative w-full bg-black h-[720px] flex items-center justify-start`}>
+      <div
+        className={`relative w-full bg-black h-[720px] flex items-center justify-start`}
+      >
         <video
           src={services_vide}
           autoPlay
@@ -35,7 +39,9 @@ const ServicesSection = () => {
           className="absolute inset-0 w-full h-full object-cover opacity-70"
         ></video>
         <div className="relative z-10 text-white md:text-center w-[700px] p-4 md:p-10">
-          <h1 className="md:text-7xl text-4xl font-semibold">{t("services")}</h1>
+          <h1 className="md:text-7xl text-4xl font-semibold">
+            {t("services")}
+          </h1>
         </div>
       </div>
 

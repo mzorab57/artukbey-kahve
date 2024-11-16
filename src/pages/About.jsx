@@ -1,6 +1,6 @@
 import React from "react";
-import about from "../assets/images/about_img.webp";
-import artukbey_logo from "../assets/images/artukbey-logo.png";
+import about from "/assets/images/about_img.webp";
+import artukbey_logo from "/assets/images/artukbey-logo.png";
 import { useTranslation } from "react-i18next"; // Import useTranslation hook
 
 const About = () => {

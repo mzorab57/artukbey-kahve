@@ -2,11 +2,11 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
-import carousel2 from "../assets/images/carousel2.jpg";
-import carousel3 from "../assets/images/carousel3.jpg";
-import carousel4 from "../assets/images/carousel4.jpg";
-import carousel5 from "../assets/images/carousel5.jpg";
-import carousel6 from "../assets/images/carousel6.jpg";
+import carousel2 from "/assets/images/carousel2.jpg";
+import carousel3 from "/assets/images/carousel3.jpg";
+import carousel4 from "/assets/images/carousel4.jpg";
+import carousel5 from "/assets/images/carousel5.jpg";
+import carousel6 from "/assets/images/carousel6.jpg";
 
 const Carousel = () => {
   return (

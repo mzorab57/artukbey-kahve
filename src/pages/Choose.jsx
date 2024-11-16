@@ -1,10 +1,10 @@
 import React from "react";
-import chooseImage from "../assets/images/barista-making-cup-coffee.jpg";
-import parallaxIcon1 from "../assets/images/parallax_icon1.png";
-import parallaxIcon2 from "../assets/images/parallax_icon2.png";
-import parallaxIcon3 from "../assets/images/parallax_icon3.png";
-import chooseIcon1 from "../assets/images/choose_icon1.png";
-import chooseIcon2 from "../assets/images/choose_icon2.png";
+import chooseImage from "/assets/images/barista-making-cup-coffee.jpg";
+import parallaxIcon1 from "/assets/images/parallax_icon1.png";
+import parallaxIcon2 from "/assets/images/parallax_icon2.png";
+import parallaxIcon3 from "/assets/images/parallax_icon3.png";
+import chooseIcon1 from "/assets/images/choose_icon1.png";
+import chooseIcon2 from "/assets/images/choose_icon2.png";
 import { useTranslation } from "react-i18next"; // Import translation hook
 
 const Choose = () => {

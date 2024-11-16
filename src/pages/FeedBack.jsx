@@ -2,11 +2,11 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
-import bg from "../assets/images/testimonials_bg2.jpeg";
-import p1 from "../assets/images/p1.jpg";
-import p2 from "../assets/images/p2.jpg";
-import p3 from "../assets/images/p3.jpg";
-import p4 from "../assets/images/p4.jpg";
+import bg from "/assets/images/testimonials_bg2.jpeg";
+import p1 from "/assets/images/p1.jpg";
+import p2 from "/assets/images/p2.jpg";
+import p3 from "/assets/images/p3.jpg";
+import p4 from "/assets/images/p4.jpg";
 import { useTranslation } from "react-i18next"; // Import useTranslation
 
 const FeedBack = () => {

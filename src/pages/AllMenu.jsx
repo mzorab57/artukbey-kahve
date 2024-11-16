@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Menu from "./Menu";
-import menuBg from "../assets/images/menu-Bg.jpg";
+import menuBg from "/assets/images/menu-Bg.jpg";
 import { useTranslation } from "react-i18next"; // Import translation
 
 const AllMenu = ({ setMenuOpen }) => {

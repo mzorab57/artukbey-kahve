@@ -7,13 +7,13 @@ import { Navigation, Autoplay } from "swiper/modules";
 import { scroller } from "react-scroll"; // Import scroller from react-scroll
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion"; // Import framer-motion
-import bg1 from "../assets/images/bg1.jpg";
-import bg2 from "../assets/images/bg2.jpg";
-import bg3 from "../assets/images/bg3.jpg";
-import bg4 from "../assets/images/bg4.jpg";
-import bg6 from "../assets/images/bg6.jpg";
-import nav from "../assets/images/nav.png";
-import nav2 from "../assets/images/nav2.png";
+import bg1 from "/assets/images/bg1.jpg";
+import bg2 from "/assets/images/bg2.jpg";
+import bg3 from "/assets/images/bg3.jpg";
+import bg4 from "/assets/images/bg4.jpg";
+import bg6 from "/assets/images/bg6.jpg";
+import nav from "/assets/images/nav.png";
+import nav2 from "/assets/images/nav2.png";
 import i18n from "../i18n"; // Import your i18n instance
 
 const Hero = () => {
