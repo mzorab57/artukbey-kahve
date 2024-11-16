@@ -5,15 +5,12 @@ import MobileMenu from "./MobileMenu";
 import { FaFacebookF } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import { useLocation, useNavigate } from "react-router-dom";
-import LanguageSwitcher from "../component/LanguageSwitcher ";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import LanguageSwitcher from "../component/LanguageSwitcher";
 import { useTranslation } from "react-i18next"; // Import the useTranslation hook
 
 const Navbar = ({ menuOpen, setMenuOpen }) => {
   const { t } = useTranslation(); // Destructure the translation function
-  const location = useLocation();
-  const navigate = useNavigate();
-  const path = location.pathname;
   const [color, setColor] = useState(false);
   const [isOpenMenu, setOpenMenu] = useState(false);
 
@@ -22,55 +19,12 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
   };
   window.addEventListener("scroll", changeHeaderColor);
 
-  const handleHomeClick = () => {
-    if (path !== "/") {
-      navigate("/");
-      scroller.scrollTo("hero", {
-        smooth: true,
-        offset: -200,
-        duration: 500,
-      });
-    } else {
-      scroller.scrollTo("hero", {
-        smooth: true,
-        offset: -200,
-        duration: 500,
-      });
-    }
-  };
-
-  const handleAboutClick = () => {
-    if (path !== "/") {
-      navigate("/");
-      scroller.scrollTo("about", {
-        smooth: true,
-        offset: 40,
-        duration: 500,
-      });
-    } else {
-      scroller.scrollTo("about", {
-        smooth: true,
-        offset: 40,
-        duration: 500,
-      });
-    }
-  };
-
-  const handleContactClick = () => {
-    if (path !== "/") {
-      navigate("/");
-      scroller.scrollTo("contacts", {
-        smooth: true,
-        offset: 40,
-        duration: 500,
-      });
-    } else {
-      scroller.scrollTo("contacts", {
-        smooth: true,
-        offset: 40,
-        duration: 500,
-      });
-    }
+  const scrollToSection = (section) => {
+    scroller.scrollTo(section, {
+      smooth: true,
+      offset: section === "hero" ? -200 : 40,
+      duration: 500,
+    });
   };
 
   return (
@@ -83,16 +37,16 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
             : "opacity-100 translate-y-0 duration-200 ease-out transition-all"
         } hidden lg:flex justify-between items-center text-sm p-4 px-6 bg-black h-full w-full`}
       >
-
-        {/* time */}
+        {/* Time */}
         <div className="flex items-center space-x-3">
           <span className="flex items-center space-x-1">
             <i className="las la-clock text-[#b89272]"></i>
-            <span className="text-[#b89272]">{t("opening_hours")} </span> : {t("opening_time")}
+            <span className="text-[#b89272]">{t("opening_hours")}</span> :{" "}
+            {t("opening_time")}
           </span>
         </div>
 
-        {/*  icon */}
+        {/* Icons */}
         <div className="flex space-x-3">
           <a
             href="https://www.facebook.com/share/jjrJrDHLD4kejhEL/?mibextid=qi2Omg"
@@ -108,14 +62,15 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
           </a>
         </div>
 
-        {/* location */}
+        {/* Location */}
         <div className="flex items-center space-x-1">
           <i className="las la-map-marker-alt text-[#b89272]"></i>
-          <span className="text-[#b89272]">{t("location")} </span> : {t("address")}
+          <span className="text-[#b89272]">{t("location")}</span> :{" "}
+          {t("address")}
         </div>
       </div>
 
-      {color ? <div className="h-20 bg-gray-950  "></div> : null}
+      {color ? <div className="h-20 bg-gray-950"></div> : null}
 
       {/* Main Navbar */}
       <div
@@ -125,70 +80,79 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
       >
         {/* Logo */}
         <div>
-          <a href="/">
-            <img
-              src={artukbey_logo}
-              alt="artkbey Logo"
-              className="size-16"
-            />
-          </a>
+          <Link to="/">
+            <img src={artukbey_logo} alt="artkbey Logo" className="size-16" />
+          </Link>
         </div>
 
         {/* Navigation Menu - Hidden on Mobile */}
         <ul className={`hidden lg:flex space-x-8 rtl:space-x-8 font-semibold`}>
           <li onMouseMove={() => setMenuOpen(false)}>
-            <div onClick={handleHomeClick} className="hover:text-[#b89272] cursor-pointer px-6">
+            <Link
+              to="/"
+              onClick={() => scrollToSection("hero")}
+              className="hover:text-[#b89272] cursor-pointer px-6"
+            >
               {t("home")}
-            </div>
+            </Link>
           </li>
 
           <li onMouseMove={() => setMenuOpen(false)}>
-            <div onClick={handleAboutClick} className="hover:text-[#b89272] cursor-pointer">
+            <Link
+              to="/"
+              onClick={() => scrollToSection("about")}
+              className="hover:text-[#b89272] cursor-pointer"
+            >
               {t("about")}
-            </div>
+            </Link>
           </li>
 
           {/* Menu */}
           <li onMouseMove={() => setMenuOpen(false)} className="group relative">
-            <a href="/menu" className="hover:text-[#b89272]">
+            <Link to="/menu" className="hover:text-[#b89272]">
               {t("menu")}
               <i className="las la-angle-down ml-1"></i>
-            </a>
+            </Link>
           </li>
 
           {/* Pages */}
           <li onMouseMove={() => setMenuOpen(true)}>
-            <a href="#" className="hover:text-[#b89272] flex justify-center ">
+            <div className="hover:text-[#b89272] flex justify-center cursor-pointer">
               {t("pages")} <MdKeyboardArrowDown size={25} />
               <i className="las la-angle-down ml-1"></i>
-            </a>
+            </div>
             {/* Dropdown for Pages */}
             <ul
               className={`absolute z-50 font-normal bg-black text-white p-4 space-y-2 mt-2 w-40 duration-300 ease-in-out ${
-                menuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5 pointer-events-none"
+                menuOpen
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 -translate-y-5 pointer-events-none"
               }`}
             >
               <li onClick={() => setMenuOpen(false)}>
-                <a href="/services" className="hover:text-[#b89272]">
+                <Link to="/services" className="hover:text-[#b89272]">
                   {t("services")}
-                </a>
+                </Link>
               </li>
             </ul>
           </li>
 
           {/* Contacts */}
           <li onMouseMove={() => setMenuOpen(false)}>
-            <div onClick={handleContactClick} className="hover:text-[#b89272] cursor-pointer">
+            <Link
+              to="/"
+              onClick={() => scrollToSection("contacts")}
+              className="hover:text-[#b89272] cursor-pointer"
+            >
               {t("contacts")}
-            </div>
+            </Link>
           </li>
         </ul>
 
         <LanguageSwitcher />
       </div>
       {/* Mobile Menu */}
-      <MobileMenu setOpenMenu={setOpenMenu} isOpenMenu={isOpenMenu}  />
-
+      <MobileMenu setOpenMenu={setOpenMenu} isOpenMenu={isOpenMenu} />
     </div>
   );
 };

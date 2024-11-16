@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 import Navbar from "./layouts/Navbar";
 import Footer from "./layouts/Footer";
 
 import AppRoutes from "./routes/AppRoute";
-
 
 function App() {
   // aw set show service bo awaia katek mouse lasar page lachu la har shwenek bet colse aw hover bkat
@@ -31,7 +30,11 @@ function App() {
         e.preventDefault();
       }
       // Prevent Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C
-      if (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) {
+      if (
+        e.ctrlKey &&
+        e.shiftKey &&
+        (e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)
+      ) {
         e.preventDefault();
       }
       // Prevent Ctrl+U (View Source)
@@ -48,15 +51,12 @@ function App() {
     };
   }, []);
 
-  
   return (
-   
-    <BrowserRouter>
+    <Router>
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <AppRoutes setMenuOpen={setMenuOpen} />
       <Footer />
-    </BrowserRouter>
-    
+    </Router>
   );
 }
 
