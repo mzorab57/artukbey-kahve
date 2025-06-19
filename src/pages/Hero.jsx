@@ -19,18 +19,18 @@ import i18n from "../i18n"; // Import your i18n instance
 const Hero = () => {
   const { t } = useTranslation();
   const [color, setColor] = useState(false);
-  const [paddingTop, setPaddingTop] = useState('');
+  const [paddingTop, setPaddingTop] = useState("");
   const [activeIndex, setActiveIndex] = useState(0); // Track active slide index
 
   // Detect RTL or LTR
-  const isRTL = i18n.language === 'ar' || i18n.language === 'ku';
+  const isRTL = i18n.language === "ar" || i18n.language === "ku";
 
   const changeHeaderColor = () => {
     if (window.scrollY >= 5) {
       setColor(true);
-      setPaddingTop('pt-[calc(1.5rem+1px)]');
+      setPaddingTop("pt-[calc(1.5rem+1px)]");
     } else {
-      setPaddingTop('pt-[calc(0rem+0px)]');
+      setPaddingTop("pt-[calc(0rem+0px)]");
     }
   };
 
@@ -75,7 +75,7 @@ const Hero = () => {
           <div className="description px-5">
             {/* Motion for subtitles using framer-motion */}
             <motion.div
-              key={`subtitles-${activeIndex}`} // Key to replay animation when slide changes
+              key={`subtitles-${activeIndex}` } // Key to replay animation when slide changes
               initial={{ x: -100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
@@ -104,7 +104,7 @@ const Hero = () => {
                 <span>{t("explore_more")}</span>
               </button>
               <button
-               onClick={scrollToDeleviry}
+                onClick={scrollToDeleviry}
                 className="kf-btn bg-gray-900  text-white text-sm px-3 py-2 md:px-7 md:py-3 rounded inline-flex items-center md:text-lg font-semibold"
               >
                 <span>{t("get_delivery")}</span>
@@ -119,11 +119,11 @@ const Hero = () => {
   return (
     <section name="hero" className="section  kf-started-slider">
       <Swiper
-        key={i18n.language} // Re-initialize Swiper when language changes
+        key={i18n.language } // Re-initialize Swiper when language changes
         className={`swiper-container transition-all h-screen lg:h-[820px] duration-200 ease-in-out ${
           color
             ? `${paddingTop} transition-all duration-1000`
-            : 'transition-all duration-1000'
+            : "transition-all duration-1000"
         }`}
         modules={[Navigation, Autoplay]}
         loop={true}
@@ -133,7 +133,7 @@ const Hero = () => {
           nextEl: ".custom-swiper-button-next",
           prevEl: ".custom-swiper-button-prev",
         }}
-        dir={isRTL ? 'rtl' : 'ltr'}
+        dir={isRTL ? "rtl" : "ltr"}
       >
         {renderSlide(bg2, "slide1_heading", "slide1_subheading", 0)}
         {renderSlide(bg1, "slide2_heading", "slide2_subheading", 1)}
